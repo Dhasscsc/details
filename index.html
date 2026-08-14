@@ -1,0 +1,3518 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>தாஸ் பொது சேவை மையம் - மத்திய மாநில அரசு அங்கீகாரம் பெற்றது</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', 'Nirmala UI', 'Arial Unicode MS', sans-serif;
+        }
+        
+        :root {
+            --primary-color: #1a5f7a;
+            --secondary-color: #159895;
+            --accent-color: #57C5B6;
+            --light-color: #f8f9fa;
+            --dark-color: #333;
+            --warning-color: #ff9800;
+            --success-color: #4CAF50;
+            --danger-color: #f44336;
+            --whatsapp-color: #25D366;
+            --admin-color: #9C27B0;
+        }
+        
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .logo-icon {
+            font-size: 2.5rem;
+            color: var(--accent-color);
+        }
+        
+        .logo-text h1 {
+            font-size: 1.8rem;
+            margin-bottom: 5px;
+        }
+        
+        .logo-text p {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        
+        /* Admin Button - Top Right */
+        .admin-btn-top {
+            background-color: var(--admin-color);
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .admin-btn-top:hover {
+            background-color: #7B1FA2;
+            transform: translateY(-2px);
+        }
+        
+        .contact-header {
+            text-align: right;
+        }
+        
+        .contact-header p {
+            margin-bottom: 5px;
+            font-size: 0.9rem;
+        }
+        
+        /* Navigation */
+        nav {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            position: relative;
+        }
+        
+        .nav-links a {
+            display: block;
+            padding: 1rem 1.2rem;
+            color: var(--dark-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            color: var(--primary-color);
+            background-color: rgba(26, 95, 122, 0.05);
+        }
+        
+        .nav-links a.active {
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--primary-color);
+        }
+        
+        .mobile-toggle {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--primary-color);
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 5rem 0;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 1.5rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 0.8rem 1.8rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .btn:hover {
+            background-color: var(--primary-color);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn-whatsapp {
+            background-color: var(--whatsapp-color);
+            margin-left: 10px;
+        }
+        
+        .btn-whatsapp:hover {
+            background-color: #128C7E;
+        }
+        
+        /* Main Content */
+        .main-content {
+            padding: 2rem 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 2.5rem;
+            color: var(--primary-color);
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 3px;
+            background-color: var(--accent-color);
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        /* Services Section */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+        
+        .service-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .service-card-hint {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: var(--primary-color);
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-top: 0.8rem;
+        }
+        
+        .service-icon {
+            background-color: var(--primary-color);
+            color: white;
+            font-size: 2rem;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        
+        .service-content {
+            padding: 1.5rem;
+        }
+        
+        .service-content h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.8rem;
+        }
+        
+        /* WhatsApp Messages Section (Hidden for customers) */
+        .whatsapp-section {
+            background-color: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            margin-bottom: 3rem;
+            border-left: 5px solid var(--whatsapp-color);
+            display: none;
+        }
+        
+        .whatsapp-section.visible {
+            display: block;
+        }
+        
+        .whatsapp-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 1.5rem;
+        }
+        
+        .whatsapp-icon {
+            font-size: 2.5rem;
+            color: var(--whatsapp-color);
+        }
+        
+        .whatsapp-messages {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .whatsapp-message {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 1.5rem;
+            border: 1px solid #e0e0e0;
+            transition: all 0.3s ease;
+        }
+        
+        .whatsapp-message:hover {
+            background-color: #f0f9f0;
+            border-color: var(--whatsapp-color);
+        }
+        
+        .message-icon {
+            color: var(--whatsapp-color);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .message-content h4 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        
+        .message-content p {
+            color: #555;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+        
+        .message-example {
+            background-color: white;
+            padding: 0.8rem;
+            border-radius: 5px;
+            border-left: 3px solid var(--whatsapp-color);
+            font-size: 0.85rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+        
+        /* Forms & Notices */
+        .forms-notices-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .forms-section, .notices-section {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .form-list, .notice-list {
+            list-style-type: none;
+        }
+        
+        .form-list li, .notice-list li {
+            padding: 0.8rem 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .form-list li:last-child, .notice-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .form-list a, .notice-list a {
+            color: var(--dark-color);
+            text-decoration: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .form-list a:hover, .notice-list a:hover {
+            color: var(--primary-color);
+        }
+        
+        .form-list i, .notice-list i {
+            color: var(--accent-color);
+        }
+        
+        /* Fees Section */
+        .fees-section {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            margin-bottom: 3rem;
+        }
+        
+        .fees-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+        
+        .fees-table th, .fees-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .fees-table th {
+            background-color: #f8f9fa;
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        .fees-table tr:hover {
+            background-color: #f8f9fa;
+        }
+        
+        /* Contact Section */
+        .contact-section {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            margin-bottom: 3rem;
+        }
+        
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            padding: 1rem;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        
+        .contact-item:hover {
+            transform: translateY(-3px);
+            background-color: #f0f7ff;
+        }
+        
+        .contact-icon {
+            background-color: rgba(26, 95, 122, 0.1);
+            color: var(--primary-color);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+        
+        .contact-details h4 {
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+        
+        /* WhatsApp Float Button */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 20px;
+            right: 20px;
+            background-color: var(--whatsapp-color);
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        
+        .whatsapp-float:hover {
+            background-color: #128C7E;
+            transform: scale(1.1);
+        }
+        
+        /* Admin Panel Modal */
+        .admin-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Service Detail Modal (fees + forms for one selected service) */
+        .service-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            z-index: 900;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+        }
+
+        .service-modal.visible {
+            display: flex;
+        }
+
+        .service-modal-content {
+            background-color: white;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 700px;
+            max-height: 90vh;
+            overflow-y: auto;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .service-modal-header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color, #1565C0));
+            color: white;
+            padding: 1.2rem 1.5rem;
+            border-radius: 10px 10px 0 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+        }
+
+        .service-modal-header h2 {
+            font-size: 1.3rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .service-modal-body {
+            padding: 1.5rem;
+        }
+
+        .service-modal-subtitle {
+            color: var(--primary-color);
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 0.5rem;
+        }
+
+        .modal-close-btn {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.2rem;
+            cursor: pointer;
+            padding: 4px 8px;
+        }
+        
+        .admin-modal-content {
+            background-color: white;
+            border-radius: 10px;
+            width: 95%;
+            max-width: 1400px;
+            height: 92vh;
+            max-height: 92vh;
+            overflow-y: auto;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        .admin-modal-header {
+            background: linear-gradient(135deg, var(--admin-color), #7B1FA2);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 10px 10px 0 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .admin-modal-header h2 {
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .close-admin-modal {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        
+        .admin-modal-body {
+            padding: 2rem;
+        }
+        
+        .admin-section {
+            margin-bottom: 2rem;
+        }
+        
+        .admin-section h3 {
+            color: var(--admin-color);
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #f0f0f0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        /* WhatsApp Templates in Admin */
+        .whatsapp-templates {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+        
+        .whatsapp-template {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 1.5rem;
+            border: 1px solid #e0e0e0;
+        }
+        
+        .template-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 1rem;
+        }
+        
+        .template-icon {
+            color: var(--whatsapp-color);
+            font-size: 1.2rem;
+        }
+        
+        .template-content h4 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        
+        .template-message {
+            background-color: white;
+            padding: 1rem;
+            border-radius: 5px;
+            border-left: 3px solid var(--whatsapp-color);
+            font-size: 0.9rem;
+            color: #333;
+            margin: 1rem 0;
+            white-space: pre-line;
+            line-height: 1.5;
+        }
+        
+        .template-actions {
+            display: flex;
+            gap: 10px;
+            margin-top: 1rem;
+        }
+        
+        .template-btn {
+            background-color: var(--whatsapp-color);
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            transition: background-color 0.3s;
+            flex: 1;
+        }
+        
+        .template-btn:hover {
+            background-color: #128C7E;
+        }
+        
+        .btn-copy {
+            background-color: var(--primary-color);
+        }
+        
+        .btn-copy:hover {
+            background-color: #134b60;
+        }
+        
+        /* Services Management in Admin */
+        .services-management {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-top: 1rem;
+        }
+        
+        .services-list {
+            margin-bottom: 1.5rem;
+        }
+        
+        .service-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            background-color: white;
+            border-radius: 5px;
+            margin-bottom: 0.8rem;
+            border: 1px solid #e0e0e0;
+        }
+        
+        .service-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .service-actions {
+            display: flex;
+            gap: 8px;
+        }
+        
+        .action-btn {
+            background: none;
+            border: none;
+            padding: 0.4rem 0.8rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .btn-edit {
+            background-color: var(--warning-color);
+            color: white;
+        }
+        
+        .btn-delete {
+            background-color: var(--danger-color);
+            color: white;
+        }
+        
+        .btn-add-service {
+            background-color: var(--success-color);
+            color: white;
+            border: none;
+            padding: 0.6rem 1.2rem;
+            border-radius: 4px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 500;
+        }
+        
+        /* Service Form */
+        .service-form {
+            background-color: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-top: 1.5rem;
+            border: 1px solid #e0e0e0;
+            display: none;
+        }
+        
+        .service-form.visible {
+            display: block;
+        }
+        
+        .form-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group {
+            margin-bottom: 1.2rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--dark-color);
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+        
+        .form-group input, .form-group textarea, .form-group select {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        
+        .form-group textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+        
+        .form-group input:focus, .form-group textarea:focus, .form-group select:focus {
+            border-color: var(--admin-color);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(156, 39, 176, 0.1);
+        }
+        
+        .form-actions {
+            display: flex;
+            justify-content: flex-end;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        
+        .btn-cancel {
+            background-color: #777;
+            color: white;
+            border: none;
+            padding: 0.6rem 1.2rem;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        .btn-save {
+            background-color: var(--success-color);
+            color: white;
+            border: none;
+            padding: 0.6rem 1.2rem;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        /* Login Form in Admin Modal */
+        .admin-login-form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .admin-login-form h3 {
+            text-align: center;
+            color: var(--admin-color);
+            margin-bottom: 1.5rem;
+        }
+        
+        .login-message {
+            text-align: center;
+            margin-top: 1rem;
+            padding: 0.8rem;
+            border-radius: 5px;
+            display: none;
+        }
+        
+        .login-message.error {
+            background-color: #ffebee;
+            color: #d32f2f;
+            display: block;
+        }
+        
+        .login-message.success {
+            background-color: #e8f5e9;
+            color: var(--success-color);
+            display: block;
+        }
+        
+        /* Admin Dashboard Tabs */
+        .admin-tabs {
+            display: flex;
+            border-bottom: 2px solid #e0e0e0;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+        }
+        
+        .admin-tab {
+            padding: 0.8rem 1.5rem;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-weight: 500;
+            color: #666;
+            border-bottom: 3px solid transparent;
+            transition: all 0.3s ease;
+        }
+        
+        .admin-tab.active {
+            color: var(--admin-color);
+            border-bottom: 3px solid var(--admin-color);
+        }
+        
+        .admin-tab:hover {
+            color: var(--admin-color);
+            background-color: rgba(156, 39, 176, 0.05);
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 3rem 0 1.5rem;
+        }
+        
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-column h3 {
+            color: var(--accent-color);
+            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 0.8rem;
+        }
+        
+        .footer-links a {
+            color: #ddd;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: var(--accent-color);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 1.5rem;
+            border-top: 1px solid #444;
+            color: #aaa;
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+            
+            .contact-header {
+                text-align: center;
+                margin-top: 0.5rem;
+            }
+            
+            .admin-btn-top {
+                margin-top: 10px;
+            }
+            
+            .hero h2 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            .whatsapp-templates {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .mobile-toggle {
+                display: block;
+            }
+            
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 80%;
+                max-width: 300px;
+                height: 100vh;
+                background-color: white;
+                flex-direction: column;
+                padding-top: 4rem;
+                transition: right 0.3s ease;
+                z-index: 1000;
+                box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+            }
+            
+            .nav-links.active {
+                right: 0;
+            }
+            
+            .nav-links li {
+                width: 100%;
+            }
+            
+            .nav-links a {
+                padding: 1.2rem 1.5rem;
+                border-bottom: 1px solid #eee;
+            }
+            
+            .hero {
+                padding: 3rem 0;
+            }
+            
+            .hero h2 {
+                font-size: 1.8rem;
+            }
+            
+            .services-grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+            
+            .whatsapp-messages {
+                grid-template-columns: 1fr;
+            }
+            
+            .admin-modal-content {
+                width: 98%;
+                height: 95vh;
+                max-height: 95vh;
+            }
+            
+            .service-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+            
+            .service-actions {
+                align-self: flex-end;
+            }
+            
+            .admin-tabs {
+                flex-direction: column;
+            }
+            
+            .admin-tab {
+                border-bottom: 1px solid #e0e0e0;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .logo-text h1 {
+                font-size: 1.5rem;
+            }
+            
+            .hero h2 {
+                font-size: 1.6rem;
+            }
+            
+            .section-title {
+                font-size: 1.5rem;
+            }
+            
+            .forms-notices-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-info {
+                grid-template-columns: 1fr;
+            }
+            
+            .btn-whatsapp {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+            
+            .template-actions {
+                flex-direction: column;
+            }
+            
+            .template-btn {
+                width: 100%;
+                justify-content: center;
+            }
+            
+            .form-actions {
+                flex-direction: column;
+            }
+            
+            .btn-cancel, .btn-save {
+                width: 100%;
+            }
+
+            .st-modal-content {
+                width: 95%;
+                max-height: 90vh;
+            }
+        }
+
+        /* ===== Status Tracking Section (சேவை நிலை) ===== */
+        .status-tracking-section {
+            background-color: #f5f7fa;
+            border-radius: 10px;
+            padding: 2rem;
+            margin-bottom: 3rem;
+        }
+        .st-toolbar {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+        .st-search-box {
+            flex: 1;
+            min-width: 220px;
+        }
+        .st-search-box input {
+            width: 100%;
+            padding: 11px 14px;
+            border-radius: 8px;
+            border: 1.5px solid #d9d2c0;
+            font-size: 14.5px;
+            font-family: inherit;
+            background: #fff;
+        }
+        .st-tabs {
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+            margin-bottom: 18px;
+        }
+        .st-tab {
+            padding: 7px 14px;
+            border-radius: 20px;
+            border: 1.5px solid #d9d2c0;
+            background: #fff;
+            font-size: 13px;
+            font-weight: 500;
+            cursor: pointer;
+            color: #6b6455;
+        }
+        .st-tab.active {
+            background: var(--primary-color);
+            color: #fff;
+            border-color: var(--primary-color);
+        }
+        .st-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 14px;
+        }
+        .st-card {
+            background: #fff;
+            border: 1px solid #e5dfcf;
+            border-radius: 8px;
+            padding: 16px;
+            box-shadow: 0 1px 2px rgba(0,0,0,.04);
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            position: relative;
+        }
+        .st-card .st-cat-tag {
+            font-size: 10.5px;
+            color: var(--secondary-color);
+            font-weight: 700;
+            letter-spacing: .03em;
+            text-transform: uppercase;
+        }
+        .st-card h3 {
+            margin: 0;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 1.35;
+        }
+        .st-card .st-note {
+            font-size: 12px;
+            color: #6b6455;
+            line-height: 1.4;
+            min-height: 16px;
+        }
+        .st-card .st-row {
+            display: flex;
+            gap: 8px;
+            margin-top: auto;
+            flex-wrap: wrap;
+        }
+        .st-track-btn {
+            flex: 1;
+            background: var(--accent-color);
+            color: #1a3d33;
+            border: none;
+            padding: 9px 10px;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 13px;
+            cursor: pointer;
+            font-family: inherit;
+        }
+        .st-track-btn:hover {
+            background: var(--secondary-color);
+            color: #fff;
+        }
+        .st-form-btn {
+            flex: 1;
+            background: var(--admin-color);
+            color: #fff;
+            border: none;
+            padding: 9px 10px;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 13px;
+            cursor: pointer;
+            font-family: inherit;
+            text-decoration: none;
+            text-align: center;
+        }
+        .st-form-btn:hover {
+            background: #7B1FA2;
+        }
+        .st-custom-badge {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            font-size: 9.5px;
+            background: var(--success-color);
+            color: #fff;
+            padding: 2px 7px;
+            border-radius: 10px;
+            font-weight: 700;
+        }
+        .st-empty {
+            color: #6b6455;
+            font-size: 13px;
+            padding: 8px;
+        }
+        .st-sync-note {
+            font-size: 12px;
+            color: #6b6455;
+            margin-top: 6px;
+        }
+
+        /* Status services admin management */
+        .status-admin-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 1.5rem;
+        }
+        .status-admin-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 14px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #e5e5e5;
+            flex-wrap: wrap;
+        }
+        .status-admin-item .sai-info h4 {
+            font-size: 0.95rem;
+            margin-bottom: 3px;
+        }
+        .status-admin-item .sai-info p {
+            font-size: 0.8rem;
+            color: #666;
+        }
+        .status-admin-item .sai-actions button {
+            border: none;
+            border-radius: 6px;
+            padding: 6px 10px;
+            margin-left: 6px;
+            cursor: pointer;
+            color: #fff;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-handshake"></i>
+                </div>
+                <div class="logo-text">
+                    <h1>தாஸ் பொது சேவை மையம்</h1>
+                    <p>மத்திய மாநில அரசு அங்கீகாரம் பெற்றது</p>
+                </div>
+            </div>
+            <div class="contact-header">
+                <p><i class="fas fa-map-marker-alt"></i> 147எ, கிரேட் காட்டன் ரோடு, தூத்துக்குடி-628001</p>
+                <p><i class="fas fa-phone"></i> 98 43 23 23 24 | 88 70 23 23 32 | 95 85 33 43 65</p>
+                <button class="admin-btn-top" id="adminBtnTop">
+                    <i class="fas fa-user-lock"></i> அட்மின்
+                </button>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Navigation -->
+    <nav>
+        <div class="container nav-container">
+            <div class="mobile-toggle" id="mobileToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active"><i class="fas fa-home"></i> முகப்பு</a></li>
+                <li><a href="#services"><i class="fas fa-concierge-bell"></i> சேவைகள்</a></li>
+                <li><a href="#services"><i class="fas fa-money-bill-wave"></i> கட்டணங்கள்</a></li>
+                <li><a href="#services"><i class="fas fa-file-alt"></i> படிவங்கள்</a></li>
+                <li><a href="#notices"><i class="fas fa-bullhorn"></i> அறிவிப்புகள்</a></li>
+                <li><a href="#status-tracking"><i class="fas fa-tasks"></i> சேவை நிலை</a></li>
+                <li><a href="#contact"><i class="fas fa-address-book"></i> தொடர்பு</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h2>அரசு சேவைகளை உங்கள் வாசலுக்கே கொண்டு வருகிறோம்</h2>
+            <p>தாஸ் பொது சேவை மையம் மூலம் எளிதாகவும் விரைவாகவும் அரசு சேவைகளைப் பெறுங்கள். WhatsApp மூலம் சேவை கோரிக்கைகளை அனுப்பவும்.</p>
+            <a href="#services" class="btn">சேவைகளைக் காண்க</a>
+            <a href="#contact" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> தொடர்பு கொள்ள</a>
+        </div>
+    </section>
+    
+    <!-- Main Content - Customer Section -->
+    <main class="main-content container">
+        <!-- Services Section -->
+        <section id="services">
+            <h2 class="section-title">நாங்கள் வழங்கும் சேவைகள்</h2>
+            <div class="services-grid" id="servicesGrid">
+                <!-- Services will be loaded from localStorage -->
+            </div>
+        </section>
+        
+        <!-- Forms & Notices Section -->
+        <div class="forms-notices-container">
+            <!-- Notices Section -->
+            <section class="notices-section" id="notices">
+                <h2 class="section-title">அறிவிப்புகள்</h2>
+                <ul class="notice-list" id="noticesList">
+                    <!-- Notices will be loaded from localStorage -->
+                </ul>
+            </section>
+        </div>
+        
+        <!-- Status Tracking Section -->
+        <section class="status-tracking-section" id="status-tracking">
+            <h2 class="section-title">சேவை நிலை (Status Tracking)</h2>
+            <p style="color:#666; margin-bottom:1.2rem;">உங்கள் ஆதார், பான், பாஸ்போர்ட் போன்ற விண்ணப்பங்களின் தற்போதைய நிலையை நேரடியாக அரசு வலைதளங்களில் சரிபார்க்கவும்.</p>
+
+            <div class="st-toolbar">
+                <div class="st-search-box">
+                    <input type="text" id="stSearchInput" placeholder="சேவையை தேடுங்க... (எ.கா: Aadhaar, PAN)">
+                </div>
+            </div>
+
+            <div class="st-tabs" id="stTabs"></div>
+            <div class="st-grid" id="stGrid"></div>
+        </section>
+        
+        <!-- Service Detail Modal (fees + forms for the selected service) -->
+        <div class="service-modal" id="serviceDetailModal">
+            <div class="service-modal-content">
+                <div class="service-modal-header">
+                    <h2><i id="serviceModalIcon" class="fas fa-concierge-bell"></i> <span id="serviceModalName"></span></h2>
+                    <button class="modal-close-btn" id="closeServiceModalBtn"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="service-modal-body">
+                    <p id="serviceModalDescription" style="color:#666; margin-bottom:1.5rem;"></p>
+
+                    <h3 class="service-modal-subtitle"><i class="fas fa-money-bill-wave"></i> கட்டணங்கள்</h3>
+                    <table class="fees-table" id="serviceModalFeesTable">
+                        <thead>
+                            <tr>
+                                <th>துணை சேவை</th>
+                                <th>அரசு கட்டணம்</th>
+                                <th>சேவை கட்டணம்</th>
+                                <th>மொத்தம்</th>
+                            </tr>
+                        </thead>
+                        <tbody id="serviceModalFeesBody"></tbody>
+                    </table>
+                    <p id="serviceModalNoFees" style="display:none; color:#888; font-style:italic;">இந்த சேவைக்கான கட்டணத் தகவல் இதுவரை சேர்க்கப்படவில்லை.</p>
+                    <p style="margin-top: 0.8rem; font-style: italic; color: #666; font-size:0.9rem;">குறிப்பு: அரசு கட்டணங்கள் மாறக்கூடும். துல்லியமான தகவல்களுக்கு மையத்தைத் தொடர்பு கொள்ளவும்.</p>
+
+                    <h3 class="service-modal-subtitle" style="margin-top:2rem;"><i class="fas fa-file-alt"></i> படிவங்கள்</h3>
+                    <ul class="form-list" id="serviceModalFormsList"></ul>
+                    <p id="serviceModalNoForms" style="display:none; color:#888; font-style:italic;">இந்த சேவைக்கான படிவங்கள் இதுவரை சேர்க்கப்படவில்லை.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <h2 class="section-title">தொடர்பு கொள்ளவும்</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>முகவரி</h4>
+                        <p>147எ, கிரேட் காட்டன் ரோடு,<br>மத்திய பாகம் காவல் நிலையம் எதிரில்,<br>தூத்துக்குடி-628001</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>தொலைபேசி எண்கள்</h4>
+                        <p>98 43 23 23 24<br>88 70 23 23 32<br>95 85 33 43 65</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>WhatsApp செய்திகள்</h4>
+                        <p>98 43 23 23 24<br>சேவை மையத்திலிருந்து WhatsApp செய்திகள் அனுப்பப்படும்</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>மின்னஞ்சல்</h4>
+                        <p>dhasscsc@gmail.com</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>சேவை நேரம்</h4>
+                        <p>திங்கள் - சனி: 10:00 AM - 6:00 PM<br>ஞாயிறு: விடுமுறை</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>அலுவலக இருப்பிடம்</h4>
+                        <p>மத்திய பாகம் காவல் நிலையம் எதிரில்<br>கிரேட் காட்டன் ரோடு, தூத்துக்குடி</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/919843232324?text=தாஸ்%20பொது%20சேவை%20மையத்திற்கு%20வணக்கம்%21%20எனக்கு%20உதவி%20தேவை" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-column">
+                <h3>தாஸ் பொது சேவை மையம்</h3>
+                <p>அரசு சேவைகளை எளிதாகவும் விரைவாகவும் பெற உதவும் ஒரு நம்பகமான மையம்.</p>
+                <p><i class="fas fa-certificate"></i> மத்திய மாநில அரசு அங்கீகாரம் பெற்றது</p>
+            </div>
+            
+            <div class="footer-column">
+                <h3>விரைவு இணைப்புகள்</h3>
+                <ul class="footer-links">
+                    <li><a href="#home"><i class="fas fa-home"></i> முகப்பு</a></li>
+                    <li><a href="#services"><i class="fas fa-concierge-bell"></i> சேவைகள்</a></li>
+                    <li><a href="#services"><i class="fas fa-money-bill-wave"></i> கட்டணங்கள்</a></li>
+                    <li><a href="#services"><i class="fas fa-file-alt"></i> படிவங்கள்</a></li>
+                    <li><a href="#notices"><i class="fas fa-bullhorn"></i> அறிவிப்புகள்</a></li>
+                    <li><a href="#status-tracking"><i class="fas fa-tasks"></i> சேவை நிலை</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>தொடர்பு கொள்ள</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 147எ, கிரேட் காட்டன் ரோடு, தூத்துக்குடி-628001</p>
+                <p><i class="fas fa-phone"></i> 98 43 23 23 24</p>
+                <p><i class="fas fa-envelope"></i> dhasscsc@gmail.com</p>
+            </div>
+            
+            <div class="footer-column">
+                <h3>சேவை நேரம்</h3>
+                <p><i class="fas fa-clock"></i> திங்கள் - சனி: 10:00 AM - 6:00 PM</p>
+                <p><i class="fas fa-clock"></i> ஞாயிறு: விடுமுறை</p>
+                <p><i class="fas fa-exclamation-triangle"></i> அரசு விடுமுறை நாட்களில் மூடப்பட்டிருக்கும்</p>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>தாஸ் பொது சேவை மையம் &copy; 2024. அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை.</p>
+        </div>
+    </footer>
+
+    <!-- Admin Modal -->
+    <div class="admin-modal" id="adminModal">
+        <div class="admin-modal-content">
+            <div class="admin-modal-header">
+                <h2><i class="fas fa-user-lock"></i> நிர்வாகி பேனல்</h2>
+                <button class="close-admin-modal" id="closeAdminModal">&times;</button>
+            </div>
+            
+            <div class="admin-modal-body" id="adminContent">
+                <!-- Login form shown by default -->
+                <div id="adminLoginForm">
+                    <div class="admin-login-form">
+                        <h3>நிர்வாகி உள்நுழைவு</h3>
+                        <div class="form-group">
+                            <label for="adminUsername">பயனர்பெயர்</label>
+                            <input type="text" id="adminUsername" placeholder="பயனர்பெயரை உள்ளிடவும்">
+                        </div>
+                        <div class="form-group">
+                            <label for="adminPassword">கடவுச்சொல்</label>
+                            <input type="password" id="adminPassword" placeholder="கடவுச்சொல்லை உள்ளிடவும்">
+                        </div>
+                        <button class="btn" onclick="adminLogin()" style="width: 100%; background-color: var(--admin-color);">உள்நுழைய</button>
+                        <div class="login-message" id="adminLoginMessage"></div>
+                        
+                        <div style="margin-top: 1.5rem; padding: 1rem; background-color: #f0f7ff; border-radius: 8px; text-align: center;">
+                            <p><strong>உள்நுழைவு தகவல்கள் தெரியவில்லையா?</strong></p>
+                            <p style="margin-top: 0.5rem;">தொலைபேசியில் தொடர்பு கொள்ளவும்: <strong>98 43 23 23 24</strong></p>
+                            <p>அல்லது மின்னஞ்சல் அனுப்பவும்: <strong>dhasscsc@gmail.com</strong></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Admin dashboard (hidden by default) -->
+                <div id="adminDashboard" style="display: none;">
+                    <!-- Admin Tabs -->
+                    <div class="admin-tabs">
+                        <button class="admin-tab active" data-tab="whatsapp-tab">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </button>
+                        <button class="admin-tab" data-tab="services-tab">
+                            <i class="fas fa-concierge-bell"></i> சேவைகள்
+                        </button>
+                        <button class="admin-tab" data-tab="fees-tab">
+                            <i class="fas fa-money-bill-wave"></i> கட்டணங்கள்
+                        </button>
+                        <button class="admin-tab" data-tab="status-services-tab">
+                            <i class="fas fa-tasks"></i> சேவை நிலை
+                        </button>
+                        <button class="admin-tab" data-tab="forms-tab">
+                            <i class="fas fa-file-alt"></i> படிவங்கள்
+                        </button>
+                        <button class="admin-tab" data-tab="notices-tab">
+                            <i class="fas fa-bullhorn"></i> அறிவிப்புகள்
+                        </button>
+                        <button class="admin-tab" data-tab="manage-tab">
+                            <i class="fas fa-cog"></i> நிர்வாகம்
+                        </button>
+                    </div>
+                    
+                    <!-- WhatsApp Tab -->
+                    <div class="tab-content active" id="whatsapp-tab">
+                        <div class="admin-section">
+                            <h3><i class="fab fa-whatsapp"></i> WhatsApp செய்தி வார்ப்புருக்கள்</h3>
+                            <p style="color: #666; margin-bottom: 1.5rem;">சேவை மையத்திலிருந்து பயனர்களுக்கு அனுப்பப்படும் WhatsApp செய்தி வார்ப்புருக்கள். இவற்றை நகலெடுத்து WhatsApp-ல் பயன்படுத்தலாம்.</p>
+                            
+                            <div class="whatsapp-templates">
+                                <div class="whatsapp-template">
+                                    <div class="template-header">
+                                        <div class="template-icon">
+                                            <i class="fas fa-question-circle"></i>
+                                        </div>
+                                        <h4>சேவை நிலை புதுப்பிப்பு</h4>
+                                    </div>
+                                    <div class="template-content">
+                                        <p>விண்ணப்பத்தின் தற்போதைய நிலையை பயனருக்கு அறிவிக்க</p>
+                                        <div class="template-message" id="template1">
+தாஸ் பொது சேவை மையம்
+விண்ணப்ப எண்: [விண்ணப்ப எண்]
+நிலை: [நிலை]
+கடைசி புதுப்பிப்பு: [தேதி]
+
+நன்றி!
+தாஸ் பொது சேவை மையம்
+98 43 23 23 24
+                                        </div>
+                                        <div class="template-actions">
+                                            <button class="template-btn" onclick="copyTemplate('template1')">
+                                                <i class="fas fa-copy"></i> நகலெடு
+                                            </button>
+                                            <button class="template-btn btn-copy" onclick="sendTemplate('template1')">
+                                                <i class="fab fa-whatsapp"></i> WhatsApp
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="whatsapp-template">
+                                    <div class="template-header">
+                                        <div class="template-icon">
+                                            <i class="fas fa-file-medical"></i>
+                                        </div>
+                                        <h4>கூடுதல் ஆவணம் கோரிக்கை</h4>
+                                    </div>
+                                    <div class="template-content">
+                                        <p>சேவைக்கு தேவையான கூடுதல் ஆவணங்களை கேட்க</p>
+                                        <div class="template-message" id="template2">
+தாஸ் பொது சேவை மையம்
+விண்ணப்ப எண்: [விண்ணப்ப எண்]
+
+கூடுதல் ஆவணம் தேவை:
+1. [ஆவணம் 1]
+2. [ஆவணம் 2]
+3. [ஆவணம் 3]
+
+தயவுசெய்து இந்த ஆவணங்களை WhatsApp மூலம் அனுப்பவும்.
+
+நன்றி!
+தாஸ் பொது சேவை மையம்
+98 43 23 23 24
+                                        </div>
+                                        <div class="template-actions">
+                                            <button class="template-btn" onclick="copyTemplate('template2')">
+                                                <i class="fas fa-copy"></i> நகலெடு
+                                            </button>
+                                            <button class="template-btn btn-copy" onclick="sendTemplate('template2')">
+                                                <i class="fab fa-whatsapp"></i> WhatsApp
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="whatsapp-template">
+                                    <div class="template-header">
+                                        <div class="template-icon">
+                                            <i class="fas fa-money-check-alt"></i>
+                                        </div>
+                                        <h4>கட்டணம் செலுத்த வேண்டி</h4>
+                                    </div>
+                                    <div class="template-content">
+                                        <p>சேவை கட்டணம் செலுத்துவதற்கான விவரங்கள்</p>
+                                        <div class="template-message" id="template3">
+தாஸ் பொது சேவை மையம்
+விண்ணப்ப எண்: [விண்ணப்ப எண்]
+
+கட்டணம்: ₹[தொகை]
+கணக்கு: தாஸ் பொது சேவை மையம்
+A/C: 1234567890
+IFSC: ABCD0123456
+குறிப்பு: [விண்ணப்ப எண்]
+
+கட்டணம் செலுத்திய பிறகு ரசீதை WhatsApp மூலம் அனுப்பவும்.
+
+நன்றி!
+தாஸ் பொது சேவை மையம்
+98 43 23 23 24
+                                        </div>
+                                        <div class="template-actions">
+                                            <button class="template-btn" onclick="copyTemplate('template3')">
+                                                <i class="fas fa-copy"></i> நகலெடு
+                                            </button>
+                                            <button class="template-btn btn-copy" onclick="sendTemplate('template3')">
+                                                <i class="fab fa-whatsapp"></i> WhatsApp
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="whatsapp-template">
+                                    <div class="template-header">
+                                        <div class="template-icon">
+                                            <i class="fas fa-calendar-check"></i>
+                                        </div>
+                                        <h4>சேவை நிறைவு அறிவிப்பு</h4>
+                                    </div>
+                                    <div class="template-content">
+                                        <p>சேவை நிறைவடைந்ததை அறிவித்து மையத்தில் வந்து பெறச் சொல்ல</p>
+                                        <div class="template-message" id="template4">
+தாஸ் பொது சேவை மையம்
+விண்ணப்ப எண்: [விண்ணப்ப எண்]
+
+உங்கள் [சேவை பெயர்] சேவை நிறைவடைந்தது.
+எங்கள் மையத்தில் வந்து பெற்றுக்கொள்ளவும்.
+
+முகவரி: 147எ, கிரேட் காட்டன் ரோடு, தூத்துக்குடி
+நேரம்: 10:00 AM - 5:00 PM
+தினங்கள்: திங்கள் - சனி
+
+நன்றி!
+தாஸ் பொது சேவை மையம்
+98 43 23 23 24
+                                        </div>
+                                        <div class="template-actions">
+                                            <button class="template-btn" onclick="copyTemplate('template4')">
+                                                <i class="fas fa-copy"></i> நகலெடு
+                                            </button>
+                                            <button class="template-btn btn-copy" onclick="sendTemplate('template4')">
+                                                <i class="fab fa-whatsapp"></i> WhatsApp
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div style="margin-top: 2rem; padding: 1.5rem; background-color: #f0f7ff; border-radius: 8px;">
+                            <h4 style="color: var(--primary-color); margin-bottom: 1rem;"><i class="fas fa-info-circle"></i> WhatsApp செய்தி வழிகாட்டுதல்</h4>
+                            <p style="color: #666; margin-bottom: 0.5rem;">1. மேலே உள்ள "நகலெடு" பொத்தானை கிளிக் செய்யவும்</p>
+                            <p style="color: #666; margin-bottom: 0.5rem;">2. WhatsApp திறந்து, பயனருக்கு அனுப்ப வேண்டிய எண்ணைத் தேர்வு செய்யவும்</p>
+                            <p style="color: #666; margin-bottom: 0.5rem;">3. செய்திப் பெட்டியில் [ ] குறியீடுகளை உண்மையான தகவல்களுடன் மாற்றவும்</p>
+                            <p style="color: #666;">4. செய்தியை அனுப்பவும்</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Services Management Tab -->
+                    <div class="tab-content" id="services-tab">
+                        <div class="admin-section">
+                            <h3><i class="fas fa-concierge-bell"></i> சேவைகள் நிர்வாகம்</h3>
+                            <p style="color: #666; margin-bottom: 1.5rem;">சேவைகளைச் சேர்க்க, திருத்த, நீக்க. மாற்றங்கள் உடனடியாக முகப்புப் பக்கத்தில் தெரியும்.</p>
+                            
+                            <div class="services-management">
+                                <div class="services-list" id="adminServicesList">
+                                    <!-- Services will be loaded here -->
+                                </div>
+                                
+                                <button class="btn-add-service" id="addNewServiceBtn">
+                                    <i class="fas fa-plus"></i> புதிய சேவை சேர்க்க
+                                </button>
+                                
+                                <!-- Add/Edit Service Form -->
+                                <div class="service-form" id="serviceForm">
+                                    <h4 id="serviceFormTitle">புதிய சேவை சேர்க்க</h4>
+                                    
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="serviceNameInput">சேவை பெயர் *</label>
+                                            <input type="text" id="serviceNameInput" placeholder="சேவை பெயரை உள்ளிடவும்">
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="serviceIconSelect">சேவை சின்னம்</label>
+                                            <select id="serviceIconSelect">
+                                                <option value="fas fa-passport">கடவுச்சீட்டு</option>
+                                                <option value="fas fa-id-card-alt">ஓட்டுநர் உரிமம்</option>
+                                                <option value="fas fa-address-card">அதாரு</option>
+                                                <option value="fas fa-home">வீடு/நிலம்</option>
+                                                <option value="fas fa-graduation-cap">கல்வி</option>
+                                                <option value="fas fa-piggy-bank">நிதி</option>
+                                                <option value="fas fa-file-contract">பத்திரம்</option>
+                                                <option value="fas fa-certificate">சான்றிதழ்</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="serviceDescriptionInput">சேவை விளக்கம் *</label>
+                                        <textarea id="serviceDescriptionInput" placeholder="சேவை விளக்கத்தை உள்ளிடவும்"></textarea>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="serviceSubServicesInput">துணை சேவைகள் (காற்புள்ளியால் பிரிக்கவும்)</label>
+                                        <textarea id="serviceSubServicesInput" placeholder="எ.கா: புதிய கடவுச்சீட்டு, கடவுச்சீட்டு நீட்டிப்பு, கடவுச்சீட்டு திருத்தம்"></textarea>
+                                        <p style="font-size: 0.8rem; color: #888; margin-top: 0.3rem;">இங்கு உள்ளிடும் ஒவ்வொரு துணை சேவையும் "கட்டணங்கள்" tab-ல் dropdown-ல் தனித் தேர்வாக வரும்.</p>
+                                    </div>
+                                    
+                                    <div class="form-actions">
+                                        <input type="hidden" id="serviceIdInput">
+                                        <button type="button" class="btn-cancel" id="cancelServiceBtn">ரத்து செய்</button>
+                                        <button type="button" class="btn-save" id="saveServiceBtn">சேமிக்கவும்</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div style="margin-top: 2rem; padding: 1.5rem; background-color: #f0f7ff; border-radius: 8px;">
+                            <h4 style="color: var(--primary-color); margin-bottom: 1rem;"><i class="fas fa-info-circle"></i> சேவைகள் நிர்வாக வழிகாட்டுதல்</h4>
+                            <p style="color: #666; margin-bottom: 0.5rem;">1. இருக்கும் சேவைகளைத் திருத்த அல்லது நீக்க "திருத்து" அல்லது "நீக்கு" பொத்தானைக் கிளிக் செய்யவும்</p>
+                            <p style="color: #666; margin-bottom: 0.5rem;">2. புதிய சேவை சேர்க்க "புதிய சேவை சேர்க்க" பொத்தானைக் கிளிக் செய்யவும்</p>
+                            <p style="color: #666;">3. சேமித்த பிறகு, மாற்றங்கள் உடனடியாக முகப்புப் பக்கத்தில் தெரியும்</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Fees Management Tab -->
+                    <div class="tab-content" id="fees-tab">
+                        <div class="admin-section">
+                            <h3><i class="fas fa-money-bill-wave"></i> கட்டணங்கள் நிர்வாகம்</h3>
+                            <p style="color: #666; margin-bottom: 1.5rem;">கட்டணங்களைச் சேர்க்க, திருத்த, நீக்க. மாற்றங்கள் உடனடியாக முகப்புப் பக்கத்தில் தெரியும்.</p>
+
+                            <div class="services-management">
+                                <div class="services-list" id="adminFeesList">
+                                    <!-- Fees will be loaded here -->
+                                </div>
+
+                                <button class="btn-add-service" id="addNewFeeBtn">
+                                    <i class="fas fa-plus"></i> புதிய கட்டணம் சேர்க்க
+                                </button>
+
+                                <!-- Add/Edit Fee Form -->
+                                <div class="service-form" id="feeForm">
+                                    <h4 id="feeFormTitle">புதிய கட்டணம் சேர்க்க</h4>
+
+                                    <div class="form-group">
+                                        <label for="feeServiceInput">சேவை பெயர் *</label>
+                                        <select id="feeServiceInput">
+                                            <option value="">-- தேர்ந்தெடுக்கவும் --</option>
+                                            <option value="__custom__">பிற (நேரடியாக தட்டச்சு செய்ய)</option>
+                                        </select>
+                                        <input type="text" id="feeServiceCustomInput" placeholder="சேவை பெயரை உள்ளிடவும்" style="margin-top: 0.5rem; display: none;">
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="feeGovFeeInput">அரசு கட்டணம் (₹) *</label>
+                                            <input type="number" id="feeGovFeeInput" placeholder="0" min="0">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="feeServiceFeeInput">சேவை கட்டணம் (₹) *</label>
+                                            <input type="number" id="feeServiceFeeInput" placeholder="0" min="0">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-actions">
+                                        <input type="hidden" id="feeIdInput">
+                                        <button type="button" class="btn-cancel" id="cancelFeeBtn">ரத்து செய்</button>
+                                        <button type="button" class="btn-save" id="saveFeeBtn">சேமிக்கவும்</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="margin-top: 2rem; padding: 1.5rem; background-color: #f0f7ff; border-radius: 8px;">
+                            <h4 style="color: var(--primary-color); margin-bottom: 1rem;"><i class="fas fa-info-circle"></i> கட்டணங்கள் நிர்வாக வழிகாட்டுதல்</h4>
+                            <p style="color: #666; margin-bottom: 0.5rem;">1. இருக்கும் கட்டணங்களைத் திருத்த அல்லது நீக்க "திருத்து" அல்லது "நீக்கு" பொத்தானைக் கிளிக் செய்யவும்</p>
+                            <p style="color: #666; margin-bottom: 0.5rem;">2. புதிய கட்டணம் சேர்க்க "புதிய கட்டணம் சேர்க்க" பொத்தானைக் கிளிக் செய்யவும்</p>
+                            <p style="color: #666;">3. மொத்தம் (அரசு கட்டணம் + சேவை கட்டணம்) தானாகவே கணக்கிடப்பட்டு சேமிக்கப்படும்</p>
+                        </div>
+                    </div>
+
+                    <!-- Status Services Management Tab -->
+                    <div class="tab-content" id="status-services-tab">
+                        <div class="admin-section">
+                            <h3><i class="fas fa-tasks"></i> சேவை நிலை (Status Tracking) நிர்வாகம்</h3>
+                            <p style="color: #666; margin-bottom: 1.5rem;">"சேவை நிலை" பக்கத்தில் வாடிக்கையாளர் காணும் tracking சேவைகளை இங்கு சேர்க்க, திருத்த, நீக்கலாம். வாடிக்கையாளர் பக்கத்தில் இந்த edit/delete பொத்தான்கள் காட்டப்படாது — track மட்டுமே செய்ய முடியும்.</p>
+
+                            <div class="status-admin-list" id="statusAdminList">
+                                <!-- Status services will be loaded here -->
+                            </div>
+
+                            <button class="btn-add-service" id="addNewStatusServiceBtn" onclick="openStatusServiceForm()">
+                                <i class="fas fa-plus"></i> புதிய Tracking சேவை சேர்க்க
+                            </button>
+
+                            <div class="service-form" id="statusServiceForm" style="display:none; margin-top:1.5rem;">
+                                <h4 id="statusServiceFormTitle">புதிய Tracking சேவை சேர்க்க</h4>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="stNameInput">சேவையின் பெயர் *</label>
+                                        <input type="text" id="stNameInput" placeholder="எ.கா: EWS சான்றிதழ்">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="stCategoryInput">வகை (Category) *</label>
+                                        <input type="text" id="stCategoryInput" placeholder="எ.கா: சான்றிதழ்கள்">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="stUrlInput">Official Tracking Website URL *</label>
+                                    <input type="text" id="stUrlInput" placeholder="https://...">
+                                </div>
+                                <div class="form-group">
+                                    <label for="stNoteInput">குறிப்பு (விருப்பம்)</label>
+                                    <input type="text" id="stNoteInput" placeholder="எ.கா: Application ID தேவை">
+                                </div>
+                                <div class="form-group">
+                                    <label for="stFormFileInput"><i class="fas fa-file-upload"></i> படிவம் (Form) இணைப்பு (விருப்பம்)</label>
+                                    <input type="file" id="stFormFileInput" accept=".pdf,.doc,.docx">
+                                    <p style="font-size:0.8rem;color:#666;margin-top:6px;">இணைத்தால், வாடிக்கையாளர் "சேவை நிலை" பக்கத்தில் இதை பதிவிறக்கம் செய்யலாம்.</p>
+                                    <p id="stExistingForm" style="font-size:0.8rem;color:#159895;margin-top:4px;"></p>
+                                </div>
+                                <div class="form-actions">
+                                    <input type="hidden" id="stIdInput">
+                                    <button type="button" class="btn-cancel" onclick="closeStatusServiceForm()">ரத்து செய்</button>
+                                    <button type="button" class="btn-save" onclick="saveStatusService()">சேமிக்கவும்</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="margin-top: 2rem; padding: 1.5rem; background-color: #f0f7ff; border-radius: 8px;">
+                            <h4 style="color: var(--primary-color); margin-bottom: 1rem;"><i class="fas fa-info-circle"></i> வழிகாட்டுதல்</h4>
+                            <p style="color: #666; margin-bottom: 0.5rem;">1. இங்கு சேர்த்த/திருத்திய சேவைகள் Google Sheet-லும் சேமிக்கப்பட்டு, எந்த கணினியில் இருந்து பார்த்தாலும் ஒரே மாதிரி தெரியும்</p>
+                            <p style="color: #666;">2. படிவம் இணைத்தால், அது Google Drive-க்கு upload ஆகி, வாடிக்கையாளர் அதை நேரடியாக பதிவிறக்கம் செய்யலாம்</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Forms Management Tab -->
+                    <div class="tab-content" id="forms-tab">
+                        <div class="admin-section">
+                            <h3><i class="fas fa-file-alt"></i> படிவங்கள் நிர்வாகம்</h3>
+                            <p style="color: #666; margin-bottom: 1.5rem;">பதிவிறக்கம் செய்யக்கூடிய படிவங்களை சேர்க்க, திருத்த, நீக்க. மாற்றங்கள் உடனடியாக முகப்புப் பக்கத்தில் தெரியும்.</p>
+
+                            <div class="services-management">
+                                <div class="services-list" id="adminFormsList">
+                                    <!-- Forms will be loaded here -->
+                                </div>
+
+                                <button class="btn-add-service" id="addNewFormBtn">
+                                    <i class="fas fa-plus"></i> புதிய படிவம் சேர்க்க
+                                </button>
+
+                                <div class="service-form" id="formForm">
+                                    <h4 id="formFormTitle">புதிய படிவம் சேர்க்க</h4>
+
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="formNameInput">படிவத்தின் பெயர் *</label>
+                                            <input type="text" id="formNameInput" placeholder="எ.கா: கடவுச்சீட்டு விண்ணப்பப் படிவம்">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="formIconSelect">கோப்பு வகை சின்னம்</label>
+                                            <select id="formIconSelect">
+                                                <option value="fas fa-file-pdf">PDF</option>
+                                                <option value="fas fa-file-word">Word</option>
+                                                <option value="fas fa-file-alt">பிற ஆவணம்</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="formLinkInput">படிவ இணைப்பு (Link) *</label>
+                                        <input type="text" id="formLinkInput" placeholder="https://... (Google Drive பதிவிறக்க இணைப்பு)">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="formServiceSelect">எந்த சேவைக்கு சொந்தமானது</label>
+                                        <select id="formServiceSelect">
+                                            <option value="">பொது (எல்லா சேவைகளுக்கும்)</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="formFileInput"><i class="fas fa-file-upload"></i> அல்லது கோப்பை இங்கு upload பண்ணவும் (விருப்பம்)</label>
+                                        <input type="file" id="formFileInput" accept=".pdf,.doc,.docx">
+                                        <p style="font-size:0.8rem;color:#666;margin-top:6px;">Upload பண்ணினால், Google Drive-க்கு போய் மேலே உள்ள Link தானாக நிரப்பப்படும்.</p>
+                                    </div>
+
+                                    <div class="form-actions">
+                                        <input type="hidden" id="formIdInput">
+                                        <button type="button" class="btn-cancel" id="cancelFormBtn">ரத்து செய்</button>
+                                        <button type="button" class="btn-save" id="saveFormBtn">சேமிக்கவும்</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Notices Management Tab -->
+                    <div class="tab-content" id="notices-tab">
+                        <div class="admin-section">
+                            <h3><i class="fas fa-bullhorn"></i> அறிவிப்புகள் நிர்வாகம்</h3>
+                            <p style="color: #666; margin-bottom: 1.5rem;">அறிவிப்புகளை சேர்க்க, திருத்த, நீக்க. மாற்றங்கள் உடனடியாக முகப்புப் பக்கத்தில் தெரியும்.</p>
+
+                            <div class="services-management">
+                                <div class="services-list" id="adminNoticesList">
+                                    <!-- Notices will be loaded here -->
+                                </div>
+
+                                <button class="btn-add-service" id="addNewNoticeBtn">
+                                    <i class="fas fa-plus"></i> புதிய அறிவிப்பு சேர்க்க
+                                </button>
+
+                                <div class="service-form" id="noticeForm">
+                                    <h4 id="noticeFormTitle">புதிய அறிவிப்பு சேர்க்க</h4>
+
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="noticeTitleInput">தலைப்பு *</label>
+                                            <input type="text" id="noticeTitleInput" placeholder="எ.கா: புதிய அதாரு விதிமுறைகள்">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="noticeDateInput">தேதி</label>
+                                            <input type="date" id="noticeDateInput">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="noticeDescriptionInput">விளக்கம்</label>
+                                        <textarea id="noticeDescriptionInput" placeholder="அறிவிப்பு விளக்கத்தை உள்ளிடவும்"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="noticeLinkInput">மேலும் அறிய இணைப்பு (விருப்பம்)</label>
+                                        <input type="text" id="noticeLinkInput" placeholder="https://...">
+                                    </div>
+
+                                    <div class="form-actions">
+                                        <input type="hidden" id="noticeIdInput">
+                                        <button type="button" class="btn-cancel" id="cancelNoticeBtn">ரத்து செய்</button>
+                                        <button type="button" class="btn-save" id="saveNoticeBtn">சேமிக்கவும்</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Manage Tab -->
+                    <div class="tab-content" id="manage-tab">
+                        <div class="admin-section">
+                            <h3><i class="fas fa-cog"></i> நிர்வாக அமைப்புகள்</h3>
+                            <p style="color: #666; margin-bottom: 1.5rem;">அட்மின் பேனல் அமைப்புகள் மற்றும் உதவி.</p>
+                            
+                            <div style="background-color: #f8f9fa; border-radius: 8px; padding: 1.5rem; margin-bottom: 1.5rem;">
+                                <h4 style="color: var(--primary-color); margin-bottom: 1rem;">பயனர் தகவல்</h4>
+                                <p style="color: #666; margin-bottom: 0.5rem;"><strong>பயனர்பெயர்:</strong> <span id="loggedInUsername">நிர்வாகி</span></p>
+                                <p style="color: #666; margin-bottom: 0.5rem;"><strong>உள்நுழைவு நேரம்:</strong> <span id="loginTime">-</span></p>
+                                <p style="color: #666;"><strong>கடைசி செயல்பாடு:</strong> <span id="lastActivity">-</span></p>
+                            </div>
+                            
+                            <div style="background-color: #f8f9fa; border-radius: 8px; padding: 1.5rem; margin-bottom: 1.5rem;">
+                                <h4 style="color: var(--primary-color); margin-bottom: 1rem;">தரவு நிர்வாகம்</h4>
+                                <p style="color: #666; margin-bottom: 1rem;">இருக்கும் சேவைகள் மற்றும் அமைப்புகளை மீட்டமைக்க:</p>
+                                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                                    <button class="btn" onclick="resetServices()" style="background-color: var(--warning-color);">
+                                        <i class="fas fa-redo"></i> சேவைகள் மீட்டமை
+                                    </button>
+                                    <button class="btn" onclick="clearAllData()" style="background-color: var(--danger-color);">
+                                        <i class="fas fa-trash"></i> அனைத்தும் அழி
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <div style="background-color: #f8f9fa; border-radius: 8px; padding: 1.5rem; margin-bottom: 1.5rem;">
+                                <h4 style="color: var(--primary-color); margin-bottom: 1rem;">உதவி & ஆதரவு</h4>
+                                <p style="color: #666; margin-bottom: 0.5rem;">எந்தவொரு சிக்கலுக்கும் தொலைபேசியில் தொடர்பு கொள்ளவும்:</p>
+                                <p style="color: #666; margin-bottom: 0.5rem;"><strong>தொலைபேசி:</strong> 98 43 23 23 24</p>
+                                <p style="color: #666; margin-bottom: 0.5rem;"><strong>WhatsApp:</strong> 98 43 23 23 24</p>
+                                <p style="color: #666;"><strong>மின்னஞ்சல்:</strong> dhasscsc@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="text-align: center; margin-top: 2rem;">
+                        <button class="btn" onclick="adminLogout()" style="background-color: var(--admin-color);">
+                            <i class="fas fa-sign-out-alt"></i> வெளியேறு
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Admin credentials (hidden from users - password not shown in code)
+        const ADMIN_USERNAME = 'admin';
+        const ADMIN_PASSWORD = 'Dhass@2024'; // Secure password - not visible to users
+        
+        // DOM Elements
+        const adminBtnTop = document.getElementById('adminBtnTop');
+        const adminModal = document.getElementById('adminModal');
+        const closeAdminModal = document.getElementById('closeAdminModal');
+        const adminLoginForm = document.getElementById('adminLoginForm');
+        const adminDashboard = document.getElementById('adminDashboard');
+        const adminLoginMessage = document.getElementById('adminLoginMessage');
+        const whatsappSection = document.querySelector('.whatsapp-section');
+        const servicesGrid = document.getElementById('servicesGrid');
+        
+        // Check if admin is logged in from localStorage
+        let isAdminLoggedIn = localStorage.getItem('isAdminLoggedIn') === 'true';
+        let adminLoginTime = localStorage.getItem('adminLoginTime') || '';
+        let lastActivityTime = localStorage.getItem('lastActivityTime') || '';
+        
+        // Default services data
+        let defaultServices = [
+            {id: 1, name: 'கடவுச்சீட்டு சேவைகள்', icon: 'fas fa-passport', description: 'புதிய கடவுச்சீட்டு விண்ணப்பம், நீட்டிப்பு, கடவுச்சீட்டு திருத்தம் போன்ற சேவைகள்.', subServices: ['புதிய கடவுச்சீட்டு', 'கடவுச்சீட்டு நீட்டிப்பு', 'கடவுச்சீட்டு திருத்தம்']},
+            {id: 2, name: 'ஓட்டுநர் உரிமம்', icon: 'fas fa-id-card-alt', description: 'புதிய ஓட்டுநர் உரிமம், கற்றுக்கொள்ளும் உரிமம், உரிமம் புதுப்பித்தல் போன்றவை.', subServices: ['புதிய ஓட்டுநர் உரிமம்', 'கற்றுக்கொள்ளும் உரிமம்', 'உரிமம் புதுப்பித்தல்']},
+            {id: 3, name: 'அதாரு சேவைகள்', icon: 'fas fa-address-card', description: 'அதாரு விண்ணப்பம், புதுப்பித்தல், திருத்தம், இழப்பு சான்றிதழ் விண்ணப்பம்.', subServices: ['அதாரு விண்ணப்பம்', 'அதாரு புதுப்பித்தல்', 'அதாரு திருத்தம்', 'இழப்பு சான்றிதழ் விண்ணப்பம்']},
+            {id: 4, name: 'நிலம் மற்றும் வீடு சேவைகள்', icon: 'fas fa-home', description: 'பத்திரங்கள், மாற்றம், பிரித்தளித்தல், வீட்டு வரிவிலக்கு சான்றிதழ் போன்றவை.', subServices: ['பத்திரப் பதிவு', 'பத்திர மாற்றம்', 'நில பிரித்தளித்தல்', 'வீட்டு வரிவிலக்கு சான்றிதழ்']},
+            {id: 5, name: 'கல்வி சான்றிதழ்கள்', icon: 'fas fa-graduation-cap', description: 'பிறப்பு சான்றிதழ், இனம் சான்றிதழ், வருமான சான்றிதழ், ஊராட்சி சான்றிதழ் போன்றவை.', subServices: ['பிறப்பு சான்றிதழ்', 'இனம் சான்றிதழ்', 'வருமான சான்றிதழ்', 'ஊராட்சி சான்றிதழ்']},
+            {id: 6, name: 'அரசு நிதி சேமிப்பு திட்டங்கள்', icon: 'fas fa-piggy-bank', description: 'அரசு நிதி சேமிப்பு திட்டங்கள், கடன் விண்ணப்பங்கள், ஓய்வூதிய சேவைகள்.', subServices: ['அரசு நிதி சேமிப்பு திட்ட விண்ணப்பம்', 'கடன் விண்ணப்பம்', 'ஓய்வூதிய சேவை']}
+        ];
+        
+        // Default fees data
+        let defaultFees = [
+            {id: 1, service: 'புதிய கடவுச்சீட்டு', govFee: 1500, serviceFee: 200, total: 1700, serviceId: 1},
+            {id: 2, service: 'கடவுச்சீட்டு நீட்டிப்பு', govFee: 1000, serviceFee: 150, total: 1150, serviceId: 1},
+            {id: 3, service: 'புதிய ஓட்டுநர் உரிமம்', govFee: 500, serviceFee: 100, total: 600, serviceId: 2},
+            {id: 4, service: 'அதாரு விண்ணப்பம்', govFee: 50, serviceFee: 50, total: 100, serviceId: 3},
+            {id: 5, service: 'பிறப்பு சான்றிதழ்', govFee: 30, serviceFee: 30, total: 60, serviceId: 5},
+            {id: 6, service: 'இனம் சான்றிதழ்', govFee: 30, serviceFee: 30, total: 60, serviceId: 5}
+        ];
+        
+        // Default forms data
+        let defaultForms = [
+            {id: 1, name: 'கடவுச்சீட்டு விண்ணப்பப் படிவம்', icon: 'fas fa-file-pdf', link: '#', serviceId: 1},
+            {id: 2, name: 'ஓட்டுநர் உரிம விண்ணப்பப் படிவம்', icon: 'fas fa-file-word', link: '#', serviceId: 2},
+            {id: 3, name: 'அதாரு விண்ணப்பப் படிவம்', icon: 'fas fa-file-alt', link: '#', serviceId: 3},
+            {id: 4, name: 'பிறப்பு சான்றிதழ் விண்ணப்பப் படிவம்', icon: 'fas fa-file-pdf', link: '#', serviceId: 5},
+            {id: 5, name: 'இனம் சான்றிதழ் விண்ணப்பப் படிவம்', icon: 'fas fa-file-word', link: '#', serviceId: 5}
+        ];
+        
+        // Default notices data
+        let defaultNotices = [
+            {id: 1, title: 'புதிய கடவுச்சீட்டு விதிமுறைகள் - ஜூன் 2024', date: '2024-06-15', description: 'கடவுச்சீட்டு விண்ணப்ப முறையில் புதிய மாற்றங்கள்', link: '#'},
+            {id: 2, title: 'அதாரு புதுப்பித்தல் காலக்கெடு நீட்டிப்பு', date: '2024-06-10', description: 'அதாரு புதுப்பித்தல் காலக்கெடு 30-06-2024 வரை நீட்டிக்கப்பட்டது', link: '#'},
+            {id: 3, title: 'கோடை விடுமுறை கால அட்டவணை', date: '2024-05-01', description: 'சேவை மையத்தின் கோடை விடுமுறை அட்டவணை', link: '#'},
+            {id: 4, title: 'புதிய சேவைகள் - மே 2024', date: '2024-05-15', description: 'மே 2024 முதல் புதிய சேவைகள் தொடங்கப்படும்', link: '#'}
+        ];
+        
+        // Load data from localStorage or use default
+        let services = JSON.parse(localStorage.getItem('services')) || defaultServices;
+        let fees = JSON.parse(localStorage.getItem('fees')) || defaultFees;
+        let forms = JSON.parse(localStorage.getItem('forms')) || defaultForms;
+        let notices = JSON.parse(localStorage.getItem('notices')) || defaultNotices;
+        
+        // Mobile Navigation Toggle
+        const mobileToggle = document.getElementById('mobileToggle');
+        const navLinks = document.getElementById('navLinks');
+        
+        mobileToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+        
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                if(this.getAttribute('href') === '#') return;
+                
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Highlight active navigation link based on scroll position
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section[id]');
+            const scrollPosition = window.scrollY + 100;
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                const sectionId = section.getAttribute('id');
+                
+                if(scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    document.querySelectorAll('.nav-links a').forEach(link => {
+                        link.classList.remove('active');
+                        if(link.getAttribute('href') === `#${sectionId}`) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        });
+        
+        // Open admin modal
+        adminBtnTop.addEventListener('click', () => {
+            adminModal.style.display = 'flex';
+            updateLastActivity();
+        });
+        
+        // Close admin modal
+        closeAdminModal.addEventListener('click', () => {
+            adminModal.style.display = 'none';
+        });
+        
+        // Close modal when clicking outside
+        adminModal.addEventListener('click', function(e) {
+            if(e.target === this) {
+                adminModal.style.display = 'none';
+            }
+        });
+        
+        // Admin login function
+        function adminLogin() {
+            const username = document.getElementById('adminUsername').value;
+            const password = document.getElementById('adminPassword').value;
+            
+            // For security, password is not shown in code
+            // Actual password is set in ADMIN_PASSWORD variable above
+            if (username === ADMIN_USERNAME && password === ADMIN_PASSWORD) {
+                // Successful login
+                isAdminLoggedIn = true;
+                const now = new Date();
+                adminLoginTime = now.toLocaleString('ta-IN');
+                lastActivityTime = now.toLocaleString('ta-IN');
+                
+                localStorage.setItem('isAdminLoggedIn', 'true');
+                localStorage.setItem('adminLoginTime', adminLoginTime);
+                localStorage.setItem('lastActivityTime', lastActivityTime);
+                
+                // Show success message
+                adminLoginMessage.textContent = 'வெற்றிகரமாக உள்நுழைந்துள்ளீர்கள்!';
+                adminLoginMessage.className = 'login-message success';
+                adminLoginMessage.style.display = 'block';
+                
+                // Switch to admin dashboard
+                setTimeout(() => {
+                    adminLoginForm.style.display = 'none';
+                    adminDashboard.style.display = 'block';
+                    adminLoginMessage.style.display = 'none';
+                    
+                    // Update admin info
+                    document.getElementById('loggedInUsername').textContent = username;
+                    document.getElementById('loginTime').textContent = adminLoginTime;
+                    document.getElementById('lastActivity').textContent = lastActivityTime;
+                    
+                    // Load services in admin panel
+                    loadServicesInAdmin();
+                    loadFeesInAdmin();
+                    loadStatusServicesInAdmin();
+                    loadFormsInAdmin();
+                    loadNoticesInAdmin();
+                    
+                    // Set active tab
+                    setActiveTab('whatsapp-tab');
+                }, 1000);
+            } else {
+                // Failed login
+                adminLoginMessage.textContent = 'தவறான பயனர்பெயர் அல்லது கடவுச்சொல்!';
+                adminLoginMessage.className = 'login-message error';
+                adminLoginMessage.style.display = 'block';
+                
+                // Clear password field
+                document.getElementById('adminPassword').value = '';
+            }
+        }
+        
+        // Admin logout function
+        function adminLogout() {
+            if (confirm('நிர்வாகி பேனலில் இருந்து வெளியேற வேண்டுமா?')) {
+                isAdminLoggedIn = false;
+                localStorage.setItem('isAdminLoggedIn', 'false');
+                
+                // Switch back to login form
+                adminDashboard.style.display = 'none';
+                adminLoginForm.style.display = 'block';
+                
+                // Clear form fields
+                document.getElementById('adminUsername').value = '';
+                document.getElementById('adminPassword').value = '';
+                
+                // Close modal after logout
+                setTimeout(() => {
+                    adminModal.style.display = 'none';
+                }, 500);
+            }
+        }
+        
+        // Copy template to clipboard
+        function copyTemplate(templateId) {
+            const templateElement = document.getElementById(templateId);
+            const textToCopy = templateElement.textContent;
+            
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                alert('WhatsApp செய்தி நகலெடுக்கப்பட்டது! இப்போது WhatsApp-ல் ஒட்டவும்.');
+                updateLastActivity();
+            }).catch(err => {
+                console.error('நகலெடுக்க முடியவில்லை: ', err);
+                alert('நகலெடுக்க முடியவில்லை. மீண்டும் முயற்சிக்கவும்.');
+            });
+        }
+        
+        // Send template via WhatsApp (opens WhatsApp with template)
+        function sendTemplate(templateId) {
+            const templateElement = document.getElementById(templateId);
+            const textToSend = templateElement.textContent;
+            const encodedText = encodeURIComponent(textToSend);
+            const whatsappUrl = `https://wa.me/?text=${encodedText}`;
+            
+            window.open(whatsappUrl, '_blank');
+            updateLastActivity();
+        }
+        
+        // Update last activity time
+        function updateLastActivity() {
+            if (isAdminLoggedIn) {
+                const now = new Date();
+                lastActivityTime = now.toLocaleString('ta-IN');
+                localStorage.setItem('lastActivityTime', lastActivityTime);
+                document.getElementById('lastActivity').textContent = lastActivityTime;
+            }
+        }
+        
+        // Check admin status on page load
+        function checkAdminStatus() {
+            if (isAdminLoggedIn) {
+                // Admin is logged in
+                // Update admin button text
+                adminBtnTop.innerHTML = '<i class="fas fa-user-check"></i> அட்மின்';
+                
+                // Update admin info
+                document.getElementById('loggedInUsername').textContent = ADMIN_USERNAME;
+                document.getElementById('loginTime').textContent = adminLoginTime;
+                document.getElementById('lastActivity').textContent = lastActivityTime;
+            }
+        }
+        
+        // Load services on main page
+        function loadServicesOnMainPage() {
+            servicesGrid.innerHTML = '';
+            
+            services.forEach(service => {
+                const serviceCard = document.createElement('div');
+                serviceCard.className = 'service-card';
+                serviceCard.setAttribute('data-id', service.id);
+                serviceCard.innerHTML = `
+                    <div class="service-icon">
+                        <i class="${service.icon}"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>${service.name}</h3>
+                        <p>${service.description}</p>
+                        <div class="service-card-hint"><i class="fas fa-hand-pointer"></i> கட்டணங்கள் & படிவங்கள் பார்க்க கிளிக் செய்யவும்</div>
+                    </div>
+                `;
+                serviceCard.addEventListener('click', function () {
+                    openServiceDetail(service.id);
+                });
+                servicesGrid.appendChild(serviceCard);
+            });
+        }
+
+        // Open the service detail modal: shows only this service's fees and forms
+        function openServiceDetail(serviceId) {
+            const service = services.find(s => s.id === serviceId);
+            if (!service) return;
+
+            document.getElementById('serviceModalIcon').className = service.icon;
+            document.getElementById('serviceModalName').textContent = service.name;
+            document.getElementById('serviceModalDescription').textContent = service.description;
+
+            const feesBody = document.getElementById('serviceModalFeesBody');
+            const noFeesMsg = document.getElementById('serviceModalNoFees');
+            const matchingFees = fees.filter(f => f.serviceId === serviceId);
+            feesBody.innerHTML = '';
+            if (matchingFees.length === 0) {
+                noFeesMsg.style.display = 'block';
+                document.getElementById('serviceModalFeesTable').style.display = 'none';
+            } else {
+                noFeesMsg.style.display = 'none';
+                document.getElementById('serviceModalFeesTable').style.display = 'table';
+                matchingFees.forEach(fee => {
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td>${fee.service}</td>
+                        <td>₹ ${fee.govFee}</td>
+                        <td>₹ ${fee.serviceFee}</td>
+                        <td>₹ ${fee.total}</td>
+                    `;
+                    feesBody.appendChild(row);
+                });
+            }
+
+            const formsListEl = document.getElementById('serviceModalFormsList');
+            const noFormsMsg = document.getElementById('serviceModalNoForms');
+            const matchingForms = forms.filter(f => f.serviceId === serviceId);
+            formsListEl.innerHTML = '';
+            if (matchingForms.length === 0) {
+                noFormsMsg.style.display = 'block';
+            } else {
+                noFormsMsg.style.display = 'none';
+                matchingForms.forEach(form => {
+                    const listItem = document.createElement('li');
+                    listItem.innerHTML = `
+                        <a href="${form.link}" target="_blank">
+                            ${form.name}
+                            <i class="${form.icon}"></i>
+                        </a>
+                    `;
+                    formsListEl.appendChild(listItem);
+                });
+            }
+
+            document.getElementById('serviceDetailModal').classList.add('visible');
+        }
+
+        document.getElementById('closeServiceModalBtn').addEventListener('click', function () {
+            document.getElementById('serviceDetailModal').classList.remove('visible');
+        });
+
+        document.getElementById('serviceDetailModal').addEventListener('click', function (e) {
+            if (e.target === this) this.classList.remove('visible');
+        });
+        
+        // Load fees on main page
+        function loadFeesOnMainPage() {
+            const feesTableBody = document.getElementById('feesTableBody');
+            if (!feesTableBody) return;
+            
+            feesTableBody.innerHTML = '';
+            
+            fees.forEach(fee => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${fee.service}</td>
+                    <td>₹ ${fee.govFee}</td>
+                    <td>₹ ${fee.serviceFee}</td>
+                    <td>₹ ${fee.total}</td>
+                `;
+                feesTableBody.appendChild(row);
+            });
+        }
+        
+        // Load forms on main page
+        function loadFormsOnMainPage() {
+            const formsList = document.getElementById('formsList');
+            if (!formsList) return;
+            
+            formsList.innerHTML = '';
+            
+            forms.forEach(form => {
+                const listItem = document.createElement('li');
+                listItem.innerHTML = `
+                    <a href="${form.link}" target="_blank">
+                        ${form.name}
+                        <i class="${form.icon}"></i>
+                    </a>
+                `;
+                formsList.appendChild(listItem);
+            });
+        }
+        
+        // Load notices on main page
+        function loadNoticesOnMainPage() {
+            const noticesList = document.getElementById('noticesList');
+            if (!noticesList) return;
+            
+            noticesList.innerHTML = '';
+            
+            notices.forEach(notice => {
+                const listItem = document.createElement('li');
+                listItem.innerHTML = `
+                    <a href="${notice.link || '#'}" target="_blank">
+                        ${notice.title}
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                `;
+                noticesList.appendChild(listItem);
+            });
+        }
+        
+        // Load services in admin panel
+        function loadServicesInAdmin() {
+            const adminServicesList = document.getElementById('adminServicesList');
+            adminServicesList.innerHTML = '';
+            
+            services.forEach(service => {
+                const serviceItem = document.createElement('div');
+                serviceItem.className = 'service-item';
+                serviceItem.innerHTML = `
+                    <div class="service-info">
+                        <i class="${service.icon}"></i>
+                        <div>
+                            <h4 style="margin: 0; color: var(--primary-color);">${service.name}</h4>
+                            <p style="margin: 0; font-size: 0.9rem; color: #666;">${service.description}</p>
+                        </div>
+                    </div>
+                    <div class="service-actions">
+                        <button class="action-btn btn-edit" data-id="${service.id}">
+                            <i class="fas fa-edit"></i> திருத்து
+                        </button>
+                        <button class="action-btn btn-delete" data-id="${service.id}">
+                            <i class="fas fa-trash"></i> நீக்கு
+                        </button>
+                    </div>
+                `;
+                adminServicesList.appendChild(serviceItem);
+            });
+            
+            // Add event listeners for edit and delete buttons
+            document.querySelectorAll('.btn-edit').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const serviceId = parseInt(this.getAttribute('data-id'));
+                    editService(serviceId);
+                });
+            });
+            
+            document.querySelectorAll('.btn-delete').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const serviceId = parseInt(this.getAttribute('data-id'));
+                    deleteService(serviceId);
+                });
+            });
+        }
+        
+        // Edit service
+        function editService(serviceId) {
+            const service = services.find(s => s.id === serviceId);
+            if (!service) return;
+            
+            document.getElementById('serviceFormTitle').textContent = 'சேவையை திருத்து';
+            document.getElementById('serviceNameInput').value = service.name;
+            document.getElementById('serviceIconSelect').value = service.icon;
+            document.getElementById('serviceDescriptionInput').value = service.description;
+            document.getElementById('serviceSubServicesInput').value = (service.subServices || []).join(', ');
+            document.getElementById('serviceIdInput').value = service.id;
+            
+            // Show the form
+            document.getElementById('serviceForm').classList.add('visible');
+            
+            // Scroll to form
+            document.getElementById('serviceForm').scrollIntoView({ behavior: 'smooth' });
+            
+            updateLastActivity();
+        }
+        
+        // Delete service
+        function deleteService(serviceId) {
+            if (confirm('இந்த சேவையை நிச்சயமாக நீக்க வேண்டுமா?')) {
+                services = services.filter(s => s.id !== serviceId);
+                saveServices();
+                
+                // Reload services
+                loadServicesOnMainPage();
+                loadServicesInAdmin();
+                
+                alert('சேவை வெற்றிகரமாக நீக்கப்பட்டது!');
+                updateLastActivity();
+            }
+        }
+        
+        // Save services to localStorage + Google Sheet (cross-device sync)
+        function saveServices() {
+            localStorage.setItem('services', JSON.stringify(services));
+            gasSend({ action: 'saveSiteData', key: GAS_CONFIG.writeKey, dataType: 'services', data: services });
+        }
+        
+        // Save fees to localStorage + Google Sheet (cross-device sync)
+        function saveFees() {
+            localStorage.setItem('fees', JSON.stringify(fees));
+            gasSend({ action: 'saveSiteData', key: GAS_CONFIG.writeKey, dataType: 'fees', data: fees });
+        }
+        
+        // Save forms to localStorage + Google Sheet (cross-device sync)
+        function saveForms() {
+            localStorage.setItem('forms', JSON.stringify(forms));
+            gasSend({ action: 'saveSiteData', key: GAS_CONFIG.writeKey, dataType: 'forms', data: forms });
+        }
+        
+        // Save notices to localStorage + Google Sheet (cross-device sync)
+        function saveNotices() {
+            localStorage.setItem('notices', JSON.stringify(notices));
+            gasSend({ action: 'saveSiteData', key: GAS_CONFIG.writeKey, dataType: 'notices', data: notices });
+        }
+        
+        // Add new service
+        document.getElementById('addNewServiceBtn').addEventListener('click', function() {
+            document.getElementById('serviceFormTitle').textContent = 'புதிய சேவை சேர்க்க';
+            document.getElementById('serviceNameInput').value = '';
+            document.getElementById('serviceIconSelect').value = 'fas fa-passport';
+            document.getElementById('serviceDescriptionInput').value = '';
+            document.getElementById('serviceSubServicesInput').value = '';
+            document.getElementById('serviceIdInput').value = '';
+            
+            // Show the form
+            document.getElementById('serviceForm').classList.add('visible');
+            
+            // Scroll to form
+            document.getElementById('serviceForm').scrollIntoView({ behavior: 'smooth' });
+            
+            updateLastActivity();
+        });
+        
+        // Cancel service form
+        document.getElementById('cancelServiceBtn').addEventListener('click', function() {
+            document.getElementById('serviceForm').classList.remove('visible');
+        });
+        
+        // Save service
+        document.getElementById('saveServiceBtn').addEventListener('click', function() {
+            const serviceName = document.getElementById('serviceNameInput').value.trim();
+            const serviceIcon = document.getElementById('serviceIconSelect').value;
+            const serviceDescription = document.getElementById('serviceDescriptionInput').value.trim();
+            const serviceSubServices = document.getElementById('serviceSubServicesInput').value
+                .split(',').map(s => s.trim()).filter(s => s.length > 0);
+            const serviceId = document.getElementById('serviceIdInput').value;
+            
+            if (!serviceName || !serviceDescription) {
+                alert('சேவை பெயர் மற்றும் விளக்கம் தேவை!');
+                return;
+            }
+            
+            if (serviceId) {
+                // Editing existing service
+                const id = parseInt(serviceId);
+                const index = services.findIndex(s => s.id === id);
+                
+                if (index !== -1) {
+                    services[index] = {
+                        id: id,
+                        name: serviceName,
+                        icon: serviceIcon,
+                        description: serviceDescription,
+                        subServices: serviceSubServices
+                    };
+                }
+            } else {
+                // Adding new service
+                const newId = services.length > 0 ? Math.max(...services.map(s => s.id)) + 1 : 1;
+                services.push({
+                    id: newId,
+                    name: serviceName,
+                    icon: serviceIcon,
+                    description: serviceDescription,
+                    subServices: serviceSubServices
+                });
+            }
+            
+            // Save to localStorage
+            saveServices();
+            
+            // Reload services
+            loadServicesOnMainPage();
+            loadServicesInAdmin();
+            
+            // Hide form
+            document.getElementById('serviceForm').classList.remove('visible');
+            
+            // Show success message
+            alert(serviceId ? 'சேவை வெற்றிகரமாக திருத்தப்பட்டது!' : 'சேவை வெற்றிகரமாக சேர்க்கப்பட்டது!');
+            
+            updateLastActivity();
+        });
+        
+        // ===================================================================
+        // படிவங்கள் (Forms) நிர்வாகம்
+        // ===================================================================
+        // Fill the "which service" dropdown in the forms admin form
+        function populateFormServiceOptions(selectedServiceId) {
+            const select = document.getElementById('formServiceSelect');
+            if (!select) return;
+            select.innerHTML = '<option value="">பொது (எல்லா சேவைகளுக்கும்)</option>' +
+                services.map(s => `<option value="${s.id}">${s.name}</option>`).join('');
+            select.value = selectedServiceId || '';
+        }
+
+        function loadFormsInAdmin() {
+            const listEl = document.getElementById('adminFormsList');
+            if (!listEl) return;
+            listEl.innerHTML = '';
+            forms.forEach(form => {
+                const item = document.createElement('div');
+                item.className = 'service-item';
+                const linkedService = services.find(s => s.id === form.serviceId);
+                item.innerHTML = `
+                    <div class="service-info">
+                        <i class="${form.icon}"></i>
+                        <div>
+                            <h4 style="margin: 0; color: var(--primary-color);">${form.name}</h4>
+                            <p style="margin: 0; font-size: 0.85rem; color: #666; word-break:break-all;">${form.link}</p>
+                            <p style="margin: 0; font-size: 0.8rem; color: #999;">சேவை: ${linkedService ? linkedService.name : 'பொது (எல்லா சேவைகளுக்கும்)'}</p>
+                        </div>
+                    </div>
+                    <div class="service-actions">
+                        <button class="action-btn btn-edit" data-id="${form.id}">
+                            <i class="fas fa-edit"></i> திருத்து
+                        </button>
+                        <button class="action-btn btn-delete" data-id="${form.id}">
+                            <i class="fas fa-trash"></i> நீக்கு
+                        </button>
+                    </div>
+                `;
+                listEl.appendChild(item);
+            });
+            listEl.querySelectorAll('.btn-edit').forEach(btn => {
+                btn.addEventListener('click', function () { editForm(parseInt(this.getAttribute('data-id'))); });
+            });
+            listEl.querySelectorAll('.btn-delete').forEach(btn => {
+                btn.addEventListener('click', function () { deleteForm(parseInt(this.getAttribute('data-id'))); });
+            });
+        }
+
+        function editForm(formId) {
+            const form = forms.find(f => f.id === formId);
+            if (!form) return;
+            document.getElementById('formFormTitle').textContent = 'படிவத்தை திருத்து';
+            document.getElementById('formNameInput').value = form.name;
+            document.getElementById('formIconSelect').value = form.icon;
+            document.getElementById('formLinkInput').value = form.link;
+            populateFormServiceOptions(form.serviceId || '');
+            document.getElementById('formIdInput').value = form.id;
+            document.getElementById('formFileInput').value = '';
+            document.getElementById('formForm').classList.add('visible');
+            document.getElementById('formForm').scrollIntoView({ behavior: 'smooth' });
+            updateLastActivity();
+        }
+
+        function deleteForm(formId) {
+            if (confirm('இந்த படிவத்தை நிச்சயமாக நீக்க வேண்டுமா?')) {
+                forms = forms.filter(f => f.id !== formId);
+                saveForms();
+                loadFormsOnMainPage();
+                loadFormsInAdmin();
+                alert('படிவம் வெற்றிகரமாக நீக்கப்பட்டது!');
+                updateLastActivity();
+            }
+        }
+
+        document.getElementById('addNewFormBtn').addEventListener('click', function () {
+            document.getElementById('formFormTitle').textContent = 'புதிய படிவம் சேர்க்க';
+            document.getElementById('formNameInput').value = '';
+            document.getElementById('formIconSelect').value = 'fas fa-file-pdf';
+            document.getElementById('formLinkInput').value = '';
+            populateFormServiceOptions('');
+            document.getElementById('formIdInput').value = '';
+            document.getElementById('formFileInput').value = '';
+            document.getElementById('formForm').classList.add('visible');
+            document.getElementById('formForm').scrollIntoView({ behavior: 'smooth' });
+            updateLastActivity();
+        });
+
+        document.getElementById('cancelFormBtn').addEventListener('click', function () {
+            document.getElementById('formForm').classList.remove('visible');
+        });
+
+        function finishSaveForm(formName, formIcon, formLink, formId, formServiceId) {
+            if (formId) {
+                const id = parseInt(formId);
+                const index = forms.findIndex(f => f.id === id);
+                if (index !== -1) forms[index] = { id, name: formName, icon: formIcon, link: formLink, serviceId: formServiceId };
+            } else {
+                const newId = forms.length > 0 ? Math.max(...forms.map(f => f.id)) + 1 : 1;
+                forms.push({ id: newId, name: formName, icon: formIcon, link: formLink, serviceId: formServiceId });
+            }
+            saveForms();
+            loadFormsOnMainPage();
+            loadFormsInAdmin();
+            document.getElementById('formForm').classList.remove('visible');
+            alert(formId ? 'படிவம் வெற்றிகரமாக திருத்தப்பட்டது!' : 'படிவம் வெற்றிகரமாக சேர்க்கப்பட்டது!');
+            updateLastActivity();
+        }
+
+        document.getElementById('saveFormBtn').addEventListener('click', function () {
+            const formName = document.getElementById('formNameInput').value.trim();
+            const formIcon = document.getElementById('formIconSelect').value;
+            let formLink = document.getElementById('formLinkInput').value.trim();
+            const formId = document.getElementById('formIdInput').value;
+            const formServiceRaw = document.getElementById('formServiceSelect').value;
+            const formServiceId = formServiceRaw ? parseInt(formServiceRaw) : null;
+            const fileInput = document.getElementById('formFileInput');
+            const file = fileInput && fileInput.files && fileInput.files[0];
+
+            if (!formName || (!formLink && !file)) {
+                alert('படிவத்தின் பெயரும், Link அல்லது கோப்பு upload-ம் தேவை!');
+                return;
+            }
+
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    const base64 = e.target.result.split(',')[1];
+                    gasSend({
+                        action: 'uploadGeneralForm', key: GAS_CONFIG.writeKey,
+                        base64: base64, fileName: file.name, mime: file.type
+                    }).then(result => {
+                        if (result && result.status === 'ok' && result.url) {
+                            finishSaveForm(formName, formIcon, result.url, formId, formServiceId);
+                        } else {
+                            alert('Drive-க்கு upload செய்ய முடியவில்லை. Link field-ல் நேரடியா ஒரு இணைப்பை கொடுக்கவும்.');
+                        }
+                    });
+                };
+                reader.readAsDataURL(file);
+            } else {
+                finishSaveForm(formName, formIcon, formLink, formId, formServiceId);
+            }
+        });
+
+        // ===================================================================
+        // அறிவிப்புகள் (Notices) நிர்வாகம்
+        // ===================================================================
+        function loadNoticesInAdmin() {
+            const listEl = document.getElementById('adminNoticesList');
+            if (!listEl) return;
+            listEl.innerHTML = '';
+            notices.forEach(notice => {
+                const item = document.createElement('div');
+                item.className = 'service-item';
+                item.innerHTML = `
+                    <div class="service-info">
+                        <i class="fas fa-bullhorn"></i>
+                        <div>
+                            <h4 style="margin: 0; color: var(--primary-color);">${notice.title}</h4>
+                            <p style="margin: 0; font-size: 0.85rem; color: #666;">${notice.date || ''} — ${notice.description || ''}</p>
+                        </div>
+                    </div>
+                    <div class="service-actions">
+                        <button class="action-btn btn-edit" data-id="${notice.id}">
+                            <i class="fas fa-edit"></i> திருத்து
+                        </button>
+                        <button class="action-btn btn-delete" data-id="${notice.id}">
+                            <i class="fas fa-trash"></i> நீக்கு
+                        </button>
+                    </div>
+                `;
+                listEl.appendChild(item);
+            });
+            listEl.querySelectorAll('.btn-edit').forEach(btn => {
+                btn.addEventListener('click', function () { editNotice(parseInt(this.getAttribute('data-id'))); });
+            });
+            listEl.querySelectorAll('.btn-delete').forEach(btn => {
+                btn.addEventListener('click', function () { deleteNotice(parseInt(this.getAttribute('data-id'))); });
+            });
+        }
+
+        function editNotice(noticeId) {
+            const notice = notices.find(n => n.id === noticeId);
+            if (!notice) return;
+            document.getElementById('noticeFormTitle').textContent = 'அறிவிப்பை திருத்து';
+            document.getElementById('noticeTitleInput').value = notice.title;
+            document.getElementById('noticeDateInput').value = notice.date || '';
+            document.getElementById('noticeDescriptionInput').value = notice.description || '';
+            document.getElementById('noticeLinkInput').value = notice.link || '';
+            document.getElementById('noticeIdInput').value = notice.id;
+            document.getElementById('noticeForm').classList.add('visible');
+            document.getElementById('noticeForm').scrollIntoView({ behavior: 'smooth' });
+            updateLastActivity();
+        }
+
+        function deleteNotice(noticeId) {
+            if (confirm('இந்த அறிவிப்பை நிச்சயமாக நீக்க வேண்டுமா?')) {
+                notices = notices.filter(n => n.id !== noticeId);
+                saveNotices();
+                loadNoticesOnMainPage();
+                loadNoticesInAdmin();
+                alert('அறிவிப்பு வெற்றிகரமாக நீக்கப்பட்டது!');
+                updateLastActivity();
+            }
+        }
+
+        document.getElementById('addNewNoticeBtn').addEventListener('click', function () {
+            document.getElementById('noticeFormTitle').textContent = 'புதிய அறிவிப்பு சேர்க்க';
+            document.getElementById('noticeTitleInput').value = '';
+            document.getElementById('noticeDateInput').value = '';
+            document.getElementById('noticeDescriptionInput').value = '';
+            document.getElementById('noticeLinkInput').value = '';
+            document.getElementById('noticeIdInput').value = '';
+            document.getElementById('noticeForm').classList.add('visible');
+            document.getElementById('noticeForm').scrollIntoView({ behavior: 'smooth' });
+            updateLastActivity();
+        });
+
+        document.getElementById('cancelNoticeBtn').addEventListener('click', function () {
+            document.getElementById('noticeForm').classList.remove('visible');
+        });
+
+        document.getElementById('saveNoticeBtn').addEventListener('click', function () {
+            const noticeTitle = document.getElementById('noticeTitleInput').value.trim();
+            const noticeDate = document.getElementById('noticeDateInput').value;
+            const noticeDescription = document.getElementById('noticeDescriptionInput').value.trim();
+            const noticeLink = document.getElementById('noticeLinkInput').value.trim();
+            const noticeId = document.getElementById('noticeIdInput').value;
+
+            if (!noticeTitle) {
+                alert('அறிவிப்பு தலைப்பு தேவை!');
+                return;
+            }
+
+            if (noticeId) {
+                const id = parseInt(noticeId);
+                const index = notices.findIndex(n => n.id === id);
+                if (index !== -1) notices[index] = { id, title: noticeTitle, date: noticeDate, description: noticeDescription, link: noticeLink };
+            } else {
+                const newId = notices.length > 0 ? Math.max(...notices.map(n => n.id)) + 1 : 1;
+                notices.push({ id: newId, title: noticeTitle, date: noticeDate, description: noticeDescription, link: noticeLink });
+            }
+
+            saveNotices();
+            loadNoticesOnMainPage();
+            loadNoticesInAdmin();
+            document.getElementById('noticeForm').classList.remove('visible');
+            alert(noticeId ? 'அறிவிப்பு வெற்றிகரமாக திருத்தப்பட்டது!' : 'அறிவிப்பு வெற்றிகரமாக சேர்க்கப்பட்டது!');
+            updateLastActivity();
+        });
+
+        // Fill fee service dropdown with each service's sub-services, grouped by parent service
+        function populateFeeServiceOptions(selectedValue) {
+            const select = document.getElementById('feeServiceInput');
+            if (!select) return;
+
+            let optionsHtml = '<option value="">-- தேர்ந்தெடுக்கவும் --</option>';
+            let allSubServiceNames = [];
+
+            services.forEach(s => {
+                const subs = (s.subServices && s.subServices.length > 0) ? s.subServices : [s.name];
+                allSubServiceNames = allSubServiceNames.concat(subs);
+                optionsHtml += `<optgroup label="${s.name}">` +
+                    subs.map(sub => `<option value="${sub}">${sub}</option>`).join('') +
+                    '</optgroup>';
+            });
+
+            optionsHtml += '<option value="__custom__">பிற (நேரடியாக தட்டச்சு செய்ய)</option>';
+            select.innerHTML = optionsHtml;
+
+            const customInput = document.getElementById('feeServiceCustomInput');
+            if (selectedValue && allSubServiceNames.includes(selectedValue)) {
+                select.value = selectedValue;
+                customInput.style.display = 'none';
+                customInput.value = '';
+            } else if (selectedValue) {
+                select.value = '__custom__';
+                customInput.style.display = 'block';
+                customInput.value = selectedValue;
+            } else {
+                select.value = '';
+                customInput.style.display = 'none';
+                customInput.value = '';
+            }
+        }
+
+        document.getElementById('feeServiceInput').addEventListener('change', function () {
+            const customInput = document.getElementById('feeServiceCustomInput');
+            if (this.value === '__custom__') {
+                customInput.style.display = 'block';
+                customInput.focus();
+            } else {
+                customInput.style.display = 'none';
+                customInput.value = '';
+            }
+        });
+
+        // Load fees in admin panel
+        function loadFeesInAdmin() {
+            const listEl = document.getElementById('adminFeesList');
+            if (!listEl) return;
+            listEl.innerHTML = '';
+            fees.forEach(fee => {
+                const item = document.createElement('div');
+                item.className = 'service-item';
+                item.innerHTML = `
+                    <div class="service-info">
+                        <i class="fas fa-money-bill-wave"></i>
+                        <div>
+                            <h4 style="margin: 0; color: var(--primary-color);">${fee.service}</h4>
+                            <p style="margin: 0; font-size: 0.85rem; color: #666;">அரசு: ₹${fee.govFee} + சேவை: ₹${fee.serviceFee} = மொத்தம்: ₹${fee.total}</p>
+                        </div>
+                    </div>
+                    <div class="service-actions">
+                        <button class="action-btn btn-edit" data-id="${fee.id}">
+                            <i class="fas fa-edit"></i> திருத்து
+                        </button>
+                        <button class="action-btn btn-delete" data-id="${fee.id}">
+                            <i class="fas fa-trash"></i> நீக்கு
+                        </button>
+                    </div>
+                `;
+                listEl.appendChild(item);
+            });
+            listEl.querySelectorAll('.btn-edit').forEach(btn => {
+                btn.addEventListener('click', function () { editFee(parseInt(this.getAttribute('data-id'))); });
+            });
+            listEl.querySelectorAll('.btn-delete').forEach(btn => {
+                btn.addEventListener('click', function () { deleteFee(parseInt(this.getAttribute('data-id'))); });
+            });
+        }
+
+        function editFee(feeId) {
+            const fee = fees.find(f => f.id === feeId);
+            if (!fee) return;
+            document.getElementById('feeFormTitle').textContent = 'கட்டணத்தை திருத்து';
+            populateFeeServiceOptions(fee.service);
+            document.getElementById('feeGovFeeInput').value = fee.govFee;
+            document.getElementById('feeServiceFeeInput').value = fee.serviceFee;
+            document.getElementById('feeIdInput').value = fee.id;
+            document.getElementById('feeForm').classList.add('visible');
+            document.getElementById('feeForm').scrollIntoView({ behavior: 'smooth' });
+            updateLastActivity();
+        }
+
+        function deleteFee(feeId) {
+            if (confirm('இந்த கட்டணத்தை நிச்சயமாக நீக்க வேண்டுமா?')) {
+                fees = fees.filter(f => f.id !== feeId);
+                saveFees();
+                loadFeesOnMainPage();
+                loadFeesInAdmin();
+                alert('கட்டணம் வெற்றிகரமாக நீக்கப்பட்டது!');
+                updateLastActivity();
+            }
+        }
+
+        document.getElementById('addNewFeeBtn').addEventListener('click', function () {
+            document.getElementById('feeFormTitle').textContent = 'புதிய கட்டணம் சேர்க்க';
+            populateFeeServiceOptions('');
+            document.getElementById('feeGovFeeInput').value = '';
+            document.getElementById('feeServiceFeeInput').value = '';
+            document.getElementById('feeIdInput').value = '';
+            document.getElementById('feeForm').classList.add('visible');
+            document.getElementById('feeForm').scrollIntoView({ behavior: 'smooth' });
+            updateLastActivity();
+        });
+
+        document.getElementById('cancelFeeBtn').addEventListener('click', function () {
+            document.getElementById('feeForm').classList.remove('visible');
+        });
+
+        // Find which service a given sub-service (or fee.service string) belongs to
+        function findServiceIdBySubService(name) {
+            const match = services.find(s =>
+                (s.subServices && s.subServices.includes(name)) || s.name === name
+            );
+            return match ? match.id : null;
+        }
+
+        document.getElementById('saveFeeBtn').addEventListener('click', function () {
+            const feeServiceSelect = document.getElementById('feeServiceInput').value;
+            const feeService = feeServiceSelect === '__custom__'
+                ? document.getElementById('feeServiceCustomInput').value.trim()
+                : feeServiceSelect;
+            const feeGovFee = parseFloat(document.getElementById('feeGovFeeInput').value);
+            const feeServiceFee = parseFloat(document.getElementById('feeServiceFeeInput').value);
+            const feeId = document.getElementById('feeIdInput').value;
+
+            if (!feeService) {
+                alert('சேவை பெயர் தேவை!');
+                return;
+            }
+            if (isNaN(feeGovFee) || isNaN(feeServiceFee) || feeGovFee < 0 || feeServiceFee < 0) {
+                alert('சரியான கட்டண தொகைகளை உள்ளிடவும்!');
+                return;
+            }
+
+            const total = feeGovFee + feeServiceFee;
+            const feeServiceId = findServiceIdBySubService(feeService);
+
+            if (feeId) {
+                const id = parseInt(feeId);
+                const index = fees.findIndex(f => f.id === id);
+                if (index !== -1) fees[index] = { id, service: feeService, govFee: feeGovFee, serviceFee: feeServiceFee, total, serviceId: feeServiceId };
+            } else {
+                const newId = fees.length > 0 ? Math.max(...fees.map(f => f.id)) + 1 : 1;
+                fees.push({ id: newId, service: feeService, govFee: feeGovFee, serviceFee: feeServiceFee, total, serviceId: feeServiceId });
+            }
+
+            saveFees();
+            loadFeesOnMainPage();
+            loadFeesInAdmin();
+            document.getElementById('feeForm').classList.remove('visible');
+            alert(feeId ? 'கட்டணம் வெற்றிகரமாக திருத்தப்பட்டது!' : 'கட்டணம் வெற்றிகரமாக சேர்க்கப்பட்டது!');
+            updateLastActivity();
+        });
+
+        // Admin tabs functionality
+        function setActiveTab(tabId) {
+            // Remove active class from all tabs and contents
+            document.querySelectorAll('.admin-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            // Add active class to clicked tab and corresponding content
+            document.querySelector(`.admin-tab[data-tab="${tabId}"]`).classList.add('active');
+            document.getElementById(tabId).classList.add('active');
+        }
+        
+        // Add event listeners to admin tabs
+        document.querySelectorAll('.admin-tab').forEach(tab => {
+            tab.addEventListener('click', function() {
+                const tabId = this.getAttribute('data-tab');
+                setActiveTab(tabId);
+                updateLastActivity();
+            });
+        });
+        
+        // Reset services to default
+        function resetServices() {
+            if (confirm('சேவைகளை இயல்புநிலைக்கு மீட்டமைக்க வேண்டுமா? இதனால் தற்போதைய சேவைகள் அழிக்கப்படும்.')) {
+                services = [...defaultServices];
+                fees = [...defaultFees];
+                forms = [...defaultForms];
+                notices = [...defaultNotices];
+                
+                saveServices();
+                saveFees();
+                saveForms();
+                saveNotices();
+                
+                loadServicesOnMainPage();
+                loadFeesOnMainPage();
+                loadFormsOnMainPage();
+                loadNoticesOnMainPage();
+                loadServicesInAdmin();
+                loadFeesInAdmin();
+                
+                alert('அனைத்து தரவும் வெற்றிகரமாக மீட்டமைக்கப்பட்டன!');
+                updateLastActivity();
+            }
+        }
+        
+        // Clear all data
+        function clearAllData() {
+            if (confirm('அனைத்து தரவையும் அழிக்க வேண்டுமா? இந்த செயலை திரும்பப் பெற முடியாது.')) {
+                localStorage.clear();
+                services = [...defaultServices];
+                fees = [...defaultFees];
+                forms = [...defaultForms];
+                notices = [...defaultNotices];
+                
+                saveServices();
+                saveFees();
+                saveForms();
+                saveNotices();
+                
+                loadServicesOnMainPage();
+                loadFeesOnMainPage();
+                loadFormsOnMainPage();
+                loadNoticesOnMainPage();
+                loadServicesInAdmin();
+                loadFeesInAdmin();
+                
+                alert('அனைத்து தரவும் அழிக்கப்பட்டது!');
+                updateLastActivity();
+            }
+        }
+        
+        // ===================================================================
+        // சேவை நிலை (Status Tracking) - public view + admin management
+        // ===================================================================
+
+        // Google Apps Script இணைப்பு அமைப்பு (index.html-ல் அதே Deploy URL-ஐ பயன்படுத்தலாம்)
+        const GAS_CONFIG = {
+            url: 'https://script.google.com/macros/s/AKfycbwNkrzh9sDWA0rtwaS8qQW8lvUTGb2Dlqtr2W6OpVml8uf-6nYjzrWHgV_HaAVmddl8/exec',
+            writeKey: 'DHASS-STATUS-2026', // Apps Script-ல் WRITE_KEY-உடன் இது பொருந்த வேண்டும்
+            enabled: true // Web App URL செட் பண்ணிய பிறகு true ஆக மாற்றவும்
+        };
+
+        function gasSend(payload) {
+            if (!GAS_CONFIG.enabled || GAS_CONFIG.url.includes('PASTE_YOUR')) {
+                console.log('GAS sync skipped (not configured):', payload.action);
+                return Promise.resolve(null);
+            }
+            return fetch(GAS_CONFIG.url, {
+                method: 'POST',
+                headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+                body: JSON.stringify(payload)
+            }).then(r => r.json()).catch(err => {
+                console.error('GAS sync பிழை:', err);
+                return null;
+            });
+        }
+
+        function gasFetchStatusServices() {
+            if (!GAS_CONFIG.enabled || GAS_CONFIG.url.includes('PASTE_YOUR')) {
+                return Promise.resolve(null);
+            }
+            return fetch(GAS_CONFIG.url + '?action=listStatusServices')
+                .then(r => r.json())
+                .catch(err => {
+                    console.error('Status services fetch பிழை:', err);
+                    return null;
+                });
+        }
+
+        // சேவைகள் / கட்டணங்கள் / படிவங்கள் / அறிவிப்புகளை Google Sheet-ல் இருந்து இழுக்கும்
+        function gasFetchSiteData() {
+            if (!GAS_CONFIG.enabled || GAS_CONFIG.url.includes('PASTE_YOUR')) {
+                return Promise.resolve(null);
+            }
+            return fetch(GAS_CONFIG.url + '?action=getSiteData')
+                .then(r => r.json())
+                .catch(err => {
+                    console.error('Site data fetch பிழை:', err);
+                    return null;
+                });
+        }
+
+        // பக்கம் திறக்கும்போது Google Sheet-ல் இருந்து புதிய தகவலை இழுத்து,
+        // அனைத்து கம்யூட்டர்/browser-களிலும் ஒரே மாதிரி தெரியும்படி local-ஐ புதுப்பிக்கும்
+        function initSiteDataSync() {
+            gasFetchSiteData().then(result => {
+                if (!result || result.status !== 'ok' || !result.data) return;
+                const remote = result.data;
+                let changed = false;
+
+                if (Array.isArray(remote.services) && remote.services.length > 0) {
+                    services = remote.services;
+                    localStorage.setItem('services', JSON.stringify(services));
+                    changed = true;
+                }
+                if (Array.isArray(remote.fees) && remote.fees.length > 0) {
+                    fees = remote.fees;
+                    localStorage.setItem('fees', JSON.stringify(fees));
+                    changed = true;
+                }
+                if (Array.isArray(remote.forms) && remote.forms.length > 0) {
+                    forms = remote.forms;
+                    localStorage.setItem('forms', JSON.stringify(forms));
+                    changed = true;
+                }
+                if (Array.isArray(remote.notices) && remote.notices.length > 0) {
+                    notices = remote.notices;
+                    localStorage.setItem('notices', JSON.stringify(notices));
+                    changed = true;
+                }
+
+                if (changed) {
+                    loadServicesOnMainPage();
+                    loadNoticesOnMainPage();
+                    if (isAdminLoggedIn) {
+                        loadServicesInAdmin();
+                        loadFeesInAdmin();
+                        loadFormsInAdmin();
+                        loadNoticesInAdmin();
+                    }
+                }
+            });
+        }
+
+        const ST_STORE_KEY = 'dass_status_hub_services_v1';
+        // முன்பு இருந்த பொது tracking history feature நீக்கப்பட்டது —
+        // ஒரு வாடிக்கையாளரின் reference எண் இன்னொருவருக்கு தெரியும் அபாயம் இருந்ததால்.
+        // ஏற்கனவே சேமிக்கப்பட்ட தரவை பாதுகாப்பாக அழிக்கிறோம்:
+        localStorage.removeItem('dass_status_hub_history_v1');
+
+        const defaultStatusServices = [
+            {id:'aadhaar', name:'ஆதார் அட்டை (Aadhaar)', category:'அடையாள சான்றுகள்', url:'https://myaadhaar.uidai.gov.in/check-aadhaar-status', note:'Enrolment ID / SRN தேவை', custom:false},
+            {id:'pan', name:'பான் கார்டு (PAN)', category:'அடையாள சான்றுகள்', url:'https://tin.tin.nsdl.com/pantan/StatusTrack.html', note:'Acknowledgement / Coupon எண்', custom:false},
+            {id:'passport', name:'பாஸ்போர்ட் (Passport)', category:'அடையாள சான்றுகள்', url:'https://www.passportindia.gov.in/AppOnlineProject/statusTracker/trackStatusInput', note:'File Number தேவை', custom:false},
+            {id:'voterid', name:'வாக்காளர் அடையாள அட்டை', category:'அடையாள சான்றுகள்', url:'https://www.nvsp.in/', note:'Reference ID தேவை', custom:false},
+            {id:'dl', name:'ஓட்டுநர் உரிமம் (DL)', category:'வாகனம்', url:'https://parivahan.gov.in/parivahan//en/content/citizen-services', note:'Application எண் தேவை', custom:false},
+            {id:'rc', name:'வாகன பதிவு (RC)', category:'வாகனம்', url:'https://parivahan.gov.in/parivahan//en/content/citizen-services', note:'Application எண் தேவை', custom:false},
+            {id:'ration', name:'குடும்ப அட்டை (Ration Card)', category:'குடும்ப ஆவணங்கள்', url:'https://www.tnpds.gov.in/', note:'Application ID தேவை', custom:false},
+            {id:'birth', name:'பிறப்பு சான்றிதழ்', category:'சான்றிதழ்கள்', url:'https://www.tnesevai.tn.gov.in/', note:'Application எண் தேவை', custom:false},
+            {id:'death', name:'இறப்பு சான்றிதழ்', category:'சான்றிதழ்கள்', url:'https://www.tnesevai.tn.gov.in/', note:'Application எண் தேவை', custom:false},
+            {id:'income', name:'வருமான சான்றிதழ்', category:'சான்றிதழ்கள்', url:'https://www.tnesevai.tn.gov.in/', note:'Application எண் தேவை', custom:false},
+            {id:'community', name:'சமூக சான்றிதழ்', category:'சான்றிதழ்கள்', url:'https://www.tnesevai.tn.gov.in/', note:'Application எண் தேவை', custom:false},
+            {id:'nativity', name:'பூர்வீக சான்றிதழ்', category:'சான்றிதழ்கள்', url:'https://www.tnesevai.tn.gov.in/', note:'Application எண் தேவை', custom:false},
+            {id:'epfo', name:'EPFO பாஸ்புக் / கிளைம்', category:'நிதி', url:'https://www.epfindia.gov.in/site_en/index.php', note:'UAN எண் தேவை', custom:false},
+            {id:'gst', name:'GST ஆப்ளிகேஷன் நிலை', category:'நிதி', url:'https://www.gst.gov.in/', note:'ARN எண் தேவை', custom:false},
+            {id:'itr', name:'வருமான வரி Refund', category:'நிதி', url:'https://www.incometax.gov.in/iec/foportal/', note:'PAN + Assessment Year தேவை', custom:false},
+            {id:'employment', name:'வேலைவாய்ப்பு அலுவலக பதிவு', category:'மற்றவை', url:'https://www.tnvelaivaaippu.gov.in/', note:'Registration எண் தேவை', custom:false},
+            {id:'ptax', name:'சொத்து வரி (Property Tax)', category:'மற்றவை', url:'https://tnurbanepay.tn.gov.in/', note:'Assessment எண் தேவை', custom:false}
+        ];
+
+        function loadStatusServices() {
+            try {
+                const raw = localStorage.getItem(ST_STORE_KEY);
+                if (!raw) {
+                    localStorage.setItem(ST_STORE_KEY, JSON.stringify(defaultStatusServices));
+                    return [...defaultStatusServices];
+                }
+                return JSON.parse(raw);
+            } catch (e) {
+                return [...defaultStatusServices];
+            }
+        }
+        function saveStatusServicesLocal(list) {
+            localStorage.setItem(ST_STORE_KEY, JSON.stringify(list));
+        }
+
+        let statusServices = loadStatusServices();
+        let stActiveCategory = 'அனைத்தும்';
+
+        function stCategories() {
+            const cats = Array.from(new Set(statusServices.map(s => s.category)));
+            return ['அனைத்தும்', ...cats];
+        }
+
+        function renderStTabs() {
+            const tabsEl = document.getElementById('stTabs');
+            if (!tabsEl) return;
+            tabsEl.innerHTML = '';
+            stCategories().forEach(cat => {
+                const btn = document.createElement('button');
+                btn.className = 'st-tab' + (cat === stActiveCategory ? ' active' : '');
+                btn.textContent = cat;
+                btn.onclick = () => { stActiveCategory = cat; renderStTabs(); renderStGrid(); };
+                tabsEl.appendChild(btn);
+            });
+        }
+
+        function renderStGrid() {
+            const grid = document.getElementById('stGrid');
+            if (!grid) return;
+            const q = (document.getElementById('stSearchInput').value || '').trim().toLowerCase();
+            grid.innerHTML = '';
+            const filtered = statusServices.filter(s => {
+                const matchesCat = stActiveCategory === 'அனைத்தும்' || s.category === stActiveCategory;
+                const matchesSearch = !q || s.name.toLowerCase().includes(q) || s.category.toLowerCase().includes(q);
+                return matchesCat && matchesSearch;
+            });
+            if (filtered.length === 0) {
+                grid.innerHTML = '<div class="st-empty">எதுவும் கிடைக்கவில்லை. வேறு வார்த்தையில் தேடுங்க.</div>';
+                return;
+            }
+            filtered.forEach(s => {
+                const card = document.createElement('div');
+                card.className = 'st-card';
+                card.innerHTML = `
+                    ${s.custom ? '<div class="st-custom-badge">CUSTOM</div>' : ''}
+                    <div class="st-cat-tag">${s.category}</div>
+                    <h3>${s.name}</h3>
+                    <div class="st-note">${s.note || ''}</div>
+                    <div class="st-row">
+                        <button class="st-track-btn" data-id="${s.id}">நிலை பார்க்க →</button>
+                        ${s.formUrl ? `<a class="st-form-btn" href="${s.formUrl}" target="_blank"><i class="fas fa-download"></i> படிவம்</a>` : ''}
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+
+            grid.querySelectorAll('.st-track-btn').forEach(btn => {
+                btn.onclick = () => {
+                    const id = btn.getAttribute('data-id');
+                    const svc = statusServices.find(x => x.id === id);
+                    window.open(svc.url, '_blank');
+                };
+            });
+        }
+
+        function initStatusTracking() {
+            renderStTabs();
+            renderStGrid();
+            const searchEl = document.getElementById('stSearchInput');
+            if (searchEl) searchEl.addEventListener('input', renderStGrid);
+
+            // Google Sheet-ல் இருந்து தற்போதைய பட்டியலை இழுத்து, local-ஐ புதுப்பிக்கவும் (cross-device sync)
+            gasFetchStatusServices().then(list => {
+                if (list && Array.isArray(list) && list.length > 0) {
+                    statusServices = list;
+                    saveStatusServicesLocal(statusServices);
+                    renderStTabs();
+                    renderStGrid();
+                    if (isAdminLoggedIn) loadStatusServicesInAdmin();
+                }
+            });
+        }
+
+        // ---- Admin management for status services ----
+        function loadStatusServicesInAdmin() {
+            const listEl = document.getElementById('statusAdminList');
+            if (!listEl) return;
+            listEl.innerHTML = '';
+            statusServices.forEach(s => {
+                const item = document.createElement('div');
+                item.className = 'status-admin-item';
+                item.innerHTML = `
+                    <div class="sai-info">
+                        <h4>${s.name} ${s.custom ? '<span style="color:#4CAF50;font-size:0.75rem;">(CUSTOM)</span>' : ''}</h4>
+                        <p>${s.category} ${s.formUrl ? ' · <i class="fas fa-paperclip"></i> படிவம் இணைக்கப்பட்டுள்ளது' : ''}</p>
+                    </div>
+                    <div class="sai-actions">
+                        <button style="background-color: var(--secondary-color);" onclick="openStatusServiceForm('${s.id}')"><i class="fas fa-edit"></i> திருத்து</button>
+                        <button style="background-color: var(--danger-color);" onclick="deleteStatusService('${s.id}')"><i class="fas fa-trash"></i> நீக்கு</button>
+                    </div>
+                `;
+                listEl.appendChild(item);
+            });
+        }
+
+        let stEditingId = null;
+        function openStatusServiceForm(id) {
+            stEditingId = id || null;
+            const form = document.getElementById('statusServiceForm');
+            const title = document.getElementById('statusServiceFormTitle');
+            document.getElementById('stFormFileInput').value = '';
+            if (id) {
+                const svc = statusServices.find(s => s.id === id);
+                title.textContent = 'Tracking சேவையை திருத்து';
+                document.getElementById('stNameInput').value = svc.name;
+                document.getElementById('stCategoryInput').value = svc.category;
+                document.getElementById('stUrlInput').value = svc.url;
+                document.getElementById('stNoteInput').value = svc.note || '';
+                document.getElementById('stIdInput').value = svc.id;
+                document.getElementById('stExistingForm').textContent = svc.formUrl ? ('இணைக்கப்பட்ட படிவம்: ' + (svc.formName || 'கோப்பு')) : '';
+            } else {
+                title.textContent = 'புதிய Tracking சேவை சேர்க்க';
+                document.getElementById('stNameInput').value = '';
+                document.getElementById('stCategoryInput').value = '';
+                document.getElementById('stUrlInput').value = '';
+                document.getElementById('stNoteInput').value = '';
+                document.getElementById('stIdInput').value = '';
+                document.getElementById('stExistingForm').textContent = '';
+            }
+            form.style.display = 'block';
+            form.scrollIntoView({ behavior: 'smooth' });
+        }
+        function closeStatusServiceForm() {
+            document.getElementById('statusServiceForm').style.display = 'none';
+            stEditingId = null;
+        }
+
+        function saveStatusService() {
+            const name = document.getElementById('stNameInput').value.trim();
+            const category = document.getElementById('stCategoryInput').value.trim() || 'மற்றவை';
+            const url = document.getElementById('stUrlInput').value.trim();
+            const note = document.getElementById('stNoteInput').value.trim();
+            if (!name || !url) {
+                alert('சேவையின் பெயரும் URL-ஆம் கட்டாயம் தேவை');
+                return;
+            }
+
+            let svc;
+            if (stEditingId) {
+                svc = statusServices.find(s => s.id === stEditingId);
+                svc.name = name; svc.category = category; svc.url = url; svc.note = note;
+            } else {
+                const id = 'custom_' + Date.now();
+                svc = { id, name, category, url, note, custom: true };
+                statusServices.push(svc);
+            }
+            saveStatusServicesLocal(statusServices);
+            closeStatusServiceForm();
+            renderStTabs();
+            renderStGrid();
+            loadStatusServicesInAdmin();
+            updateLastActivity();
+
+            const fileInput = document.getElementById('stFormFileInput');
+            const file = fileInput && fileInput.files && fileInput.files[0];
+
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    const base64 = e.target.result.split(',')[1];
+                    gasSend({
+                        action: 'saveStatusService',
+                        key: GAS_CONFIG.writeKey,
+                        service: svc,
+                        formBase64: base64,
+                        formName: file.name,
+                        formMime: file.type
+                    }).then(result => {
+                        if (result && result.status === 'ok' && result.formUrl) {
+                            svc.formUrl = result.formUrl;
+                            svc.formName = file.name;
+                            saveStatusServicesLocal(statusServices);
+                            renderStGrid();
+                            loadStatusServicesInAdmin();
+                        }
+                    });
+                };
+                reader.readAsDataURL(file);
+            } else {
+                gasSend({ action: 'saveStatusService', key: GAS_CONFIG.writeKey, service: svc });
+            }
+
+            alert(stEditingId ? 'சேவை திருத்தப்பட்டது!' : 'சேவை சேர்க்கப்பட்டது!');
+        }
+
+        function deleteStatusService(id) {
+            if (!confirm('இந்த Tracking சேவையை நீக்கலாமா?')) return;
+            statusServices = statusServices.filter(s => s.id !== id);
+            saveStatusServicesLocal(statusServices);
+            renderStTabs();
+            renderStGrid();
+            loadStatusServicesInAdmin();
+            gasSend({ action: 'deleteStatusService', key: GAS_CONFIG.writeKey, id: id });
+            updateLastActivity();
+        }
+
+        // Initialize page
+        document.addEventListener('DOMContentLoaded', function() {
+            checkAdminStatus();
+            loadServicesOnMainPage();
+            loadFeesOnMainPage();
+            loadFormsOnMainPage();
+            loadNoticesOnMainPage();
+            initStatusTracking();
+            initSiteDataSync();
+        });
+    </script>
+</body>
+</html>
